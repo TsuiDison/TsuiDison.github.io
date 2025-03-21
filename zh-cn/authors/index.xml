@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on Tsui</title>
+    <link>https://TsuiDison.github.io/zh-cn/authors/</link>
+    <description>Recent content in Authors on Tsui</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://TsuiDison.github.io/zh-cn/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tsui</title>
+      <link>https://TsuiDison.github.io/zh-cn/authors/tsui/</link>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://TsuiDison.github.io/zh-cn/authors/tsui/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Memory of Frozen Water</title>
+      <link>https://TsuiDison.github.io/zh-cn/authors/memory-of-frozen-water/</link>
+      <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>https://TsuiDison.github.io/zh-cn/authors/memory-of-frozen-water/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Authors of Hugo</title>
+      <link>https://TsuiDison.github.io/zh-cn/authors/hugo-authors/</link>
+      <pubDate>Thu, 05 Jan 2023 01:15:29 +0100</pubDate>
+      <guid>https://TsuiDison.github.io/zh-cn/authors/hugo-authors/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

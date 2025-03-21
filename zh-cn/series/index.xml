@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Series on Tsui</title>
+    <link>https://TsuiDison.github.io/zh-cn/series/</link>
+    <description>Recent content in Series on Tsui</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 20 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://TsuiDison.github.io/zh-cn/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数值分析的程序实现</title>
+      <link>https://TsuiDison.github.io/zh-cn/series/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%AE%9E%E7%8E%B0/</link>
+      <pubDate>Thu, 20 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://TsuiDison.github.io/zh-cn/series/%E6%95%B0%E5%80%BC%E5%88%86%E6%9E%90%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%AE%9E%E7%8E%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Theme Demo</title>
+      <link>https://TsuiDison.github.io/zh-cn/series/theme-demo/</link>
+      <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://TsuiDison.github.io/zh-cn/series/theme-demo/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
