@@ -1,0 +1,4973 @@
+<!doctype html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: March 1, 2026 --><html lang="en-us" dir="ltr"
+      data-wc-theme-default="system"
+      data-hbb-relurl="/">
+  
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="generator" content="Hugo Blox Kit 0.11.0" />
+
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+  
+  
+  
+
+
+
+
+<meta name="author" content="Dison Tsui" />
+
+  
+  
+  
+  
+    
+  
+  
+  <meta name="description" content="The highly-customizable Hugo Academic theme powered by HugoBlox Kit. Easily create your personal academic website." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://tsuidison.github.io/" />
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+      
+      
+        
+      
+    
+    
+      
+      
+      
+      
+        
+      
+    
+    
+  
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+      
+      
+        
+      
+    
+    
+      
+      
+      
+      
+        
+      
+    
+    
+  
+
+
+
+
+<style>
+   
+     
+  
+   
+  :root {
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-100: oklch(0.93 0.034 272.788);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-200: oklch(0.87 0.065 274.039);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-300: oklch(0.785 0.115 274.713);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-400: oklch(0.673 0.182 276.935);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-50: oklch(0.962 0.018 272.314);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-500: oklch(0.585 0.233 277.117);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-600: oklch(0.511 0.262 276.966);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-700: oklch(0.457 0.24 277.023);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-800: oklch(0.398 0.195 277.366);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-900: oklch(0.359 0.144 278.697);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-950: oklch(0.257 0.09 281.288);
+    
+    
+    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
+       in case something accesses the raw -rgb var directly, though unlikely */
+    --hb-primary-500-rgb: 128 128 128; 
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-100: oklch(0.932 0.032 255.585);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-200: oklch(0.882 0.059 254.128);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-300: oklch(0.809 0.105 251.813);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-400: oklch(0.707 0.165 254.624);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-50: oklch(0.97 0.014 254.604);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-500: oklch(0.623 0.214 259.815);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-600: oklch(0.546 0.245 262.881);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-700: oklch(0.488 0.243 264.376);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-800: oklch(0.424 0.199 265.638);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-900: oklch(0.379 0.146 265.522);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-950: oklch(0.282 0.091 267.935);
+    
+    
+    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
+       in case something accesses the raw -rgb var directly, though unlikely */
+    --hb-secondary-500-rgb: 128 128 128; 
+  
+
+
+
+
+
+
+--color-background: #ffffff;
+--color-foreground: #111827;
+
+
+--color-header-bg: #f1f5f9;
+--color-header-fg: #0f172a;
+
+
+--color-footer-bg: #f3f4f6;
+--color-footer-fg: #0f172a;
+
+    
+  }
+
+   
+  .dark {
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-100: oklch(0.932 0.032 255.585);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-200: oklch(0.882 0.059 254.128);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-300: oklch(0.809 0.105 251.813);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-400: oklch(0.707 0.165 254.624);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-50: oklch(0.97 0.014 254.604);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-500: oklch(0.623 0.214 259.815);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-600: oklch(0.546 0.245 262.881);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-700: oklch(0.488 0.243 264.376);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-800: oklch(0.424 0.199 265.638);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-900: oklch(0.379 0.146 265.522);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-primary-950: oklch(0.282 0.091 267.935);
+    
+    
+    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
+       in case something accesses the raw -rgb var directly, though unlikely */
+    --hb-primary-500-rgb: 128 128 128; 
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-100: oklch(0.953 0.051 180.801);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-200: oklch(0.91 0.096 180.426);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-300: oklch(0.855 0.138 181.071);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-400: oklch(0.777 0.152 181.912);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-50: oklch(0.984 0.014 180.72);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-500: oklch(0.704 0.14 182.503);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-600: oklch(0.6 0.118 184.704);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-700: oklch(0.511 0.096 186.391);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-800: oklch(0.437 0.078 188.216);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-900: oklch(0.386 0.063 188.416);
+    
+      /* Note: converting OKLCH to raw RGB CSS vars requires Tailwind 4's internal conversion 
+         or we output the raw color value directly if theme.css supports it.
+         
+         The existing system expects --hb-primary-50-rgb to be a comma-less RGB triplet "255 255 255".
+         However, Tailwind 4 supports OKLCH natively. 
+         
+         CRITICAL FIX: We must override the `rgb(var(...))` wrapper in `theme.css` if we want to use OKLCH.
+         OR we just output the RGB approximation if we want to keep `theme.css` untouched.
+         
+         BUT `theme.css` defines: --color-primary-50: rgb(var(--hb-primary-50-rgb));
+         So we MUST provide RGB triplets. OKLCH strings like "oklch(...)" inside `rgb(...)` is invalid CSS.
+         
+         To fix this properly without changing `theme.css` significantly, we need RGB values in this table, 
+         OR we redefine the higher-level variables.
+         
+         Since we cannot easily calculate OKLCH -> RGB in Hugo templates, we should 
+         OUTPUT THE HIGHER LEVEL VARIABLES directly here to override theme.css.
+      */
+      --color-secondary-950: oklch(0.277 0.046 192.524);
+    
+    
+    /* Also set the legacy RGB vars to a fallback (500 shade) to prevent breakage 
+       in case something accesses the raw -rgb var directly, though unlikely */
+    --hb-secondary-500-rgb: 128 128 128; 
+  
+
+
+
+
+
+
+--color-background: #0f172a;
+--color-foreground: #f8fafc;
+
+
+--color-header-bg: #0f172a;
+--color-header-fg: #f8fafc;
+
+
+--color-footer-bg: #111827;
+--color-footer-fg: #e5e7eb;
+
+    
+  }
+   
+</style>
+
+
+  
+  
+
+  
+  
+  
+    
+
+  
+  
+  
+  
+  
+  
+  
+    
+      
+        <link rel="stylesheet" href="/css/_entry.eaf162cfbe39500e0f1a1e7f2fed58341c6955ac06c66c641e738511d1b8dd39.css" integrity="sha256-6vFiz745UA4PGh5/L&#43;1YNBxpVawGxmxkHnOFEdG43Tk=" crossorigin="anonymous">
+      
+    
+  
+
+
+  
+
+  
+  
+  
+
+  
+    
+    <link href="/css/custom.min.7b1967cd1ba33611bb18eaddd440e79d4a9e1e4fdd9eee799bcd671955453e0d.css" rel="stylesheet" />
+  
+
+  <script src="/js/hb-head.min.e9ff67ddf77122b225756bf5a926e24420bea2586199fddcb3b1813a009f4ee5.js" integrity="sha256-6f9n3fdxIrIldWv1qSbiRCC&#43;olhhmf3cs7GBOgCfTuU=" crossorigin="anonymous"></script>
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+    <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Dison Tsui" />
+  
+
+  
+  
+  
+    <link rel="icon" type="image/png" href="/media/icon_hu_3c08a0ca42035b2.png" />
+  
+  
+  
+  
+    
+      <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu_37e490f56116280a.png" />
+    
+  
+
+  <link rel="canonical" href="https://tsuidison.github.io/" />
+
+  
+  
+  
+
+  
+  
+  
+
+    
+    
+      
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+    <meta property="twitter:site" content="@LoreLabs_" />
+    <meta property="twitter:creator" content="@LoreLabs_" />
+  
+  <meta property="og:site_name" content="Dison Tsui" />
+  <meta property="og:url" content="https://tsuidison.github.io/" />
+  <meta property="og:title" content="Home | Dison Tsui" />
+  <meta property="og:description" content="The highly-customizable Hugo Academic theme powered by HugoBlox Kit. Easily create your personal academic website." /><meta property="og:image" content="https://tsuidison.github.io/media/icon_hu_fb558a5ed99f547e.png" />
+    <meta property="twitter:image" content="https://tsuidison.github.io/media/icon_hu_fb558a5ed99f547e.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta property="og:updated_time" content="2023-10-24T00:00:00&#43;00:00" />
+    
+  
+
+  
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://tsuidison.github.io/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "url": "https://tsuidison.github.io/"
+}
+</script>
+
+
+  
+
+
+
+
+
+
+
+  <title>Home | Dison Tsui</title>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <style>
+    :root {
+       
+      --hb-font-size-base: 1rem;
+      --hb-font-size-scale: 1.25;
+      
+       
+      --hb-radius: 0.5rem;
+      --hb-spacing-base: 1rem;
+      --hb-spacing-section: 4rem;
+    }
+    
+    
+    @font-face {
+      font-family: 'Inter var';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url(/dist/font/Inter.var.woff2) format(woff2);
+    }
+    
+  </style>
+
+  
+
+  
+  
+
+
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+    
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+      
+      
+      
+    
+    
+  
+
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+    
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  <script
+    defer
+    src="/js/hugo-blox-en.min.8e67887d1e4e773521ed17aef87acbf3d4d07207c99e1e3f4d76d00fc44e7065.js"
+    integrity="sha256-jmeIfR5OdzUh7Reu&#43;HrL89TQcgfJnh4/TXbQD8ROcGU="
+  ></script>
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>console.log('✓ Alpine.js loading on demand');</script>
+  
+  
+  <script src="/dist/lib/alpinejs/cdn.min.e041f1b639d1e6b2fc2736d8d7638a409afcd444a6ec90446f8f4e44fa36f406.js" integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" defer></script>
+
+
+
+
+<script defer src="/js/hb-search.min.135366008264b9d452ff89aad28374bc7e4b40d2c047098318511786419873b0.js" integrity="sha256-E1NmAIJkudRS/4mq0oN0vH5LQNLARwmDGFEXhkGYc7A="></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+</head>
+
+  <body class="bg-[var(--color-background)] text-[var(--color-foreground)] page-wrapper" id="top">
+    <div id="page-bg"></div>
+    <div class="page-header sticky top-0 z-30">
+      
+      
+      
+        
+          
+
+<header id="site-header" class="header">
+  <nav class="navbar px-3 flex justify-start">
+    <div class="order-0 h-full">
+      
+      <a class="navbar-brand" href="/" title="Dison Tsui">
+        
+        
+        
+        Dison Tsui
+      </a>
+    </div>
+    
+    <input id="nav-toggle" type="checkbox" class="hidden" />
+    <label
+      for="nav-toggle"
+      class="order-3 cursor-pointer flex items-center lg:hidden text-[var(--color-header-fg)] lg:order-1">
+      <svg id="show-button" class="h-6 fill-current block" viewBox="0 0 20 20">
+        <title>Open Menu</title>
+        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+      </svg>
+      <svg id="hide-button" class="h-6 fill-current hidden" viewBox="0 0 20 20">
+        <title>Close Menu</title>
+        <polygon
+          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+          transform="rotate(45 10 10)"></polygon>
+      </svg>
+    </label>
+    
+
+    
+    
+    <ul
+      id="nav-menu"
+      class="navbar-nav order-3 hidden lg:flex w-full pb-6 lg:order-1 lg:w-auto lg:space-x-2 lg:pb-0 xl:space-x-8 justify-start
+      ">
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link active"
+          
+          href="/"
+        >Home</a
+        >
+      </li>
+      
+      
+      
+      
+      
+      
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          
+          href="/notes/"
+        >notes</a
+        >
+      </li>
+      
+      
+      
+    </ul>
+
+    <div class="order-1 ml-auto flex items-center md:order-2 lg:ml-0">
+
+      
+      
+      
+      <button
+        aria-label="toggle search"
+        class="inline-block px-3 text-xl text-[var(--color-header-fg)] hover:text-primary-500 cursor-pointer"
+        data-search-toggle>
+        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+      </button>
+      
+
+      
+      
+      <div class="px-3 text-[var(--color-header-fg)] hover:text-primary-500
+            [&.active]:font-bold [&.active]:text-primary-500">
+        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
+          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="block dark:hidden">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="hidden dark:block">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </div>
+      
+
+      
+      
+
+      
+      
+
+      
+      
+    </div>
+  </nav>
+</header>
+
+
+<div
+  x-data="searchModal()"
+  x-show="$store.search.open"
+  @keydown.escape.window="$store.search.open = false"
+  @keydown.cmd.k.window.prevent="$store.search.open = !$store.search.open"
+  @keydown.ctrl.k.window.prevent="$store.search.open = !$store.search.open"
+  x-cloak
+  class="fixed inset-0 z-[100] bg-black/50 backdrop-blur-sm"
+  style="display: none;"
+>
+  
+  <div class="absolute inset-0" @click="$store.search.open = false"></div>
+  
+  
+  <div 
+    class="relative mx-auto mt-[10vh] max-w-3xl"
+    x-show="$store.search.open"
+    x-transition:enter="transition ease-out duration-200"
+    x-transition:enter-start="opacity-0 translate-y-4 scale-95"
+    x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+    x-transition:leave="transition ease-in duration-150"
+    x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+    x-transition:leave-end="opacity-0 translate-y-4 scale-95"
+  >
+    <div class="mx-4 overflow-hidden rounded-2xl bg-white dark:bg-gray-900 shadow-2xl ring-1 ring-gray-900/10 dark:ring-white/10">
+      
+      
+      <div class="border-b border-gray-200 dark:border-gray-800">
+        <div class="flex items-center gap-3 px-4 py-3">
+          
+          
+          <svg class="h-5 w-5 flex-shrink-0 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+          
+          
+          <input
+            x-ref="searchInput"
+            x-model="query"
+            @input="loading = query.trim() !== ''"
+            @input.debounce.300ms="search()"
+            type="text"
+            placeholder="Search for answers..."
+            class="flex-1 bg-transparent text-lg outline-none text-gray-900 dark:text-gray-100 placeholder-gray-400"
+            autocomplete="off"
+            autofocus
+          />
+          
+          
+          <div x-show="loading" class="flex-shrink-0">
+            <svg class="animate-spin h-5 w-5 text-primary-600" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          </div>
+          
+          
+          <kbd class="hidden sm:block flex-shrink-0 rounded bg-gray-100 px-2 py-1 text-xs font-semibold text-gray-600 dark:bg-gray-800 dark:text-gray-400">ESC</kbd>
+          
+          
+    <button
+            @click="$store.search.open = false"
+            class="flex-shrink-0 rounded-lg p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-600 dark:hover:bg-gray-800 dark:hover:text-gray-300 cursor-pointer"
+    >
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+
+        
+        <div x-show="query && availableFilters.length > 0" x-transition class="border-t border-gray-100 dark:border-gray-800 px-4 py-2">
+          <div class="flex flex-wrap gap-2">
+            <button
+              @click="activeFilter = null; search()"
+              :class="activeFilter === null ? 'bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300' : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400'"
+              class="rounded-full px-3 py-1 text-xs font-medium transition-colors cursor-pointer"
+            >
+              All Results
+            </button>
+            <template x-for="filter in availableFilters" :key="filter.filterKey">
+              <button
+                @click="activeFilter = filter.filterKey; search()"
+                :class="activeFilter === filter.filterKey ? 'bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300' : 'bg-gray-100 text-gray-600 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-400'"
+                class="rounded-full px-3 py-1 text-xs font-medium transition-colors cursor-pointer"
+                x-text="filter.label + ' (' + filter.count + ')'"
+              ></button>
+            </template>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="max-h-[60vh] overflow-y-auto">
+        
+        
+        <div x-show="!query && results.length === 0" class="p-6">
+          
+          
+          
+          
+          
+          
+          
+          
+        </div>
+        
+        
+        <div x-show="query && results.length > 0" class="divide-y divide-gray-200 dark:divide-gray-800">
+          <template x-for="(result, index) in results" :key="result.id">
+            <a
+              :href="result.url"
+              @mouseenter="selectedIndex = index"
+              @click="$store.search.open = false"
+              :class="selectedIndex === index ? 'bg-primary-50 dark:bg-primary-900/20 border-l-2 border-primary-600' : ''"
+              class="block px-6 py-4 hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors group search-result"
+            >
+              
+              <div class="flex items-center gap-2 mb-2 flex-wrap">
+                
+                <span
+                  x-show="result.filters && result.filters.type"
+                  :class="{
+                    'bg-primary-100 text-primary-700 dark:bg-primary-900 dark:text-primary-300': result.filters.type && result.filters.type[0] === 'questions',
+                    'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300': result.filters.type && result.filters.type[0] === 'faq',
+                    'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300': result.filters.type && result.filters.type[0] === 'docs'
+                  }"
+                  class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium"
+                  x-text="result.filters.type ? (typeLabels[result.filters.type[0]] || result.filters.type[0]) : ''"
+                ></span>
+                
+                
+                <span 
+                  x-show="result.filters && result.filters.category" 
+                  class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300"
+                  x-text="result.filters.category ? result.filters.category[0] : ''"
+                ></span>
+                
+                
+                <span 
+                  x-show="result.filters && result.filters.difficulty" 
+                  class="inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium bg-amber-100 text-amber-700 dark:bg-amber-900 dark:text-amber-300"
+                  x-text="result.filters.difficulty ? result.filters.difficulty[0] : ''"
+                ></span>
+              </div>
+              
+              
+              <h3 class="text-lg font-semibold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors mb-2" x-html="result.meta.title || 'Untitled'"></h3>
+              
+              
+              <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2" x-html="result.excerpt"></p>
+            </a>
+          </template>
+        </div>
+        
+        
+        <div x-show="query && loading" class="px-6 py-16 text-center">
+          <div class="inline-flex items-center gap-3">
+            <svg class="animate-spin h-8 w-8 text-primary-600" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            <div class="text-left">
+              <p class="text-lg font-medium text-gray-900 dark:text-white">Searching...</p>
+              <p class="text-sm text-gray-500 dark:text-gray-400" x-text="'Finding results for &quot;' + query + '&quot;'"></p>
+            </div>
+          </div>
+        </div>
+        
+        
+        <div x-show="query && results.length === 0 && !loading && hasSearched" class="px-6 py-12 text-center">
+          <svg class="mx-auto h-12 w-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <h3 class="mt-4 text-lg font-semibold text-gray-900 dark:text-white">No results found</h3>
+          <p class="mt-2 text-gray-600 dark:text-gray-400" x-text="'No results for &quot;' + query + '&quot;'"></p>
+          <button
+            @click="query = ''; $refs.searchInput.focus()"
+            class="mt-4 text-primary-600 hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300 font-medium"
+          >
+            Clear search
+          </button>
+        </div>
+      </div>
+      
+      
+      <div class="border-t border-gray-200 dark:border-gray-800 px-4 py-3 bg-gray-50 dark:bg-gray-900/50">
+        <div class="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
+          <div class="flex items-center gap-3">
+            <span class="flex items-center gap-1">
+              <kbd class="rounded bg-white dark:bg-gray-800 px-1.5 py-0.5 font-mono text-[10px] font-semibold border border-gray-300 dark:border-gray-700">↑↓</kbd>
+              Navigate
+            </span>
+            <span class="flex items-center gap-1">
+              <kbd class="rounded bg-white dark:bg-gray-800 px-1.5 py-0.5 font-mono text-[10px] font-semibold border border-gray-300 dark:border-gray-700">↵</kbd>
+              Select
+            </span>
+            <span x-show="availableFilters.length > 0" class="flex items-center gap-1">
+              <svg class="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"></path>
+              </svg>
+              <span x-text="availableFilters.length + ' filters'"></span>
+            </span>
+          </div>
+          <a href="https://hugoblox.com" target="_blank" rel="noopener" class="flex items-center gap-1 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+            <svg class="h-3 w-3" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            Powered by Hugo Blox
+          </a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<script>
+  
+  function searchModal() {
+    return {
+      query: '',
+      results: [],
+      loading: false,
+      hasSearched: false,  
+      selectedIndex: -1,
+      activeFilter: null,
+      availableFilters: [],
+      allFilters: [],
+      trendingSearches: "[\"Search term 1\",\"Search term 2\"]",
+      pagefind: null,
+      pagefindModulePath: window.hbb?.assetPaths?.pagefind ?? '/pagefind/pagefind.js',
+      
+      
+      typeLabels: {
+        'questions': "\"Questions\"",
+        'faq': "\"FAQ\"",
+        'docs': "\"Documentation\""
+      },
+      
+      async init() {
+        
+        try {
+          this.pagefind = await import(this.pagefindModulePath);
+          await this.pagefind.init();
+          console.log('✓ Pagefind initialized');
+          
+          
+          await this.loadFilters();
+        } catch (error) {
+          console.error('Failed to initialize Pagefind:', error);
+        }
+        
+        
+        this.$watch('$store.search.open', (open) => {
+          if (open) {
+            this.$nextTick(() => this.$refs.searchInput?.focus());
+            document.body.style.overflow = 'hidden';
+          } else {
+            document.body.style.overflow = '';
+            this.query = '';
+            this.results = [];
+            this.selectedIndex = -1;
+            this.hasSearched = false;  
+          }
+        });
+        
+        
+        window.addEventListener('keydown', (e) => {
+          if (!this.$store.search.open || this.results.length === 0) return;
+          
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            this.selectedIndex = this.selectedIndex < this.results.length - 1 ? this.selectedIndex + 1 : 0;
+            this.scrollToSelected();
+          } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            this.selectedIndex = this.selectedIndex > 0 ? this.selectedIndex - 1 : this.results.length - 1;
+            this.scrollToSelected();
+          } else if (e.key === 'Enter' && this.selectedIndex >= 0) {
+            e.preventDefault();
+            const selected = this.results[this.selectedIndex];
+            if (selected) {
+              window.location.href = selected.url;
+              this.$store.search.open = false;
+            }
+          }
+        });
+      },
+      
+      scrollToSelected() {
+        this.$nextTick(() => {
+          const selectedEl = document.querySelector('.search-result:nth-child(' + (this.selectedIndex + 1) + ')');
+          if (selectedEl) {
+            selectedEl.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+          }
+        });
+      },
+
+      buildFilters(filterIndex) {
+        const filters = [];
+
+        if (filterIndex?.type) {
+          Object.entries(filterIndex.type).forEach(([value, count]) => {
+            filters.push({
+              category: 'type',
+              value,
+              label: this.typeLabels[value] || value.charAt(0).toUpperCase() + value.slice(1),
+              count,
+              filterKey: `type:${value}`
+            });
+          });
+        }
+
+        if (filterIndex?.category) {
+          Object.entries(filterIndex.category).forEach(([value, count]) => {
+            filters.push({
+              category: 'category',
+              value,
+              label: value,
+              count,
+              filterKey: `category:${value}`
+            });
+          });
+        }
+
+        if (filterIndex?.difficulty) {
+          Object.entries(filterIndex.difficulty).forEach(([value, count]) => {
+            filters.push({
+              category: 'difficulty',
+              value,
+              label: value,
+              count,
+              filterKey: `difficulty:${value}`
+            });
+          });
+        }
+
+        return filters;
+      },
+
+      mergeFilterCounts(filterCounts) {
+        if (!this.allFilters.length) {
+          return [];
+        }
+
+        return this.allFilters.map((filter) => {
+          const count = filterCounts?.[filter.category]?.[filter.value];
+          return {
+            ...filter,
+            count: typeof count === 'number' ? count : 0
+          };
+        });
+      },
+      
+      async search() {
+        if (!this.query.trim()) {
+          this.results = [];
+          this.hasSearched = false;
+          return;
+        }
+        
+        this.loading = true;
+        this.hasSearched = false;  
+        
+        try {
+          const options = {};
+          
+          
+          if (this.activeFilter) {
+            const [filterCategory, filterValue] = this.activeFilter.split(':');
+            options.filters = { [filterCategory]: filterValue };
+          }
+          
+          const search = await this.pagefind.search(this.query, options);
+          console.log('Search results:', search);
+          console.log('Search filters:', search.filters);
+          
+          
+          this.results = await Promise.all(
+            search.results.slice(0, 10).map(async (result) => {
+              const data = await result.data();
+              console.log('Result data:', data);
+              return {
+                id: data.url,
+                url: data.url,
+                meta: data.meta,
+                excerpt: data.excerpt,
+                filters: data.filters || {}
+              };
+            })
+          );
+
+          const filterCounts = search.totalFilters || search.filters || {};
+
+          if (this.allFilters.length) {
+            this.availableFilters = this.mergeFilterCounts(filterCounts);
+          } else {
+            this.availableFilters = this.buildFilters(filterCounts);
+          }
+          console.log('Final availableFilters array:', this.availableFilters);
+          
+          
+          if (this.results.length > 0) {
+            this.selectedIndex = 0;
+          }
+        } catch (error) {
+          console.error('Search error:', error);
+          this.results = [];
+        } finally {
+          this.loading = false;
+          this.hasSearched = true;  
+        }
+      },
+      
+      async loadFilters() {
+        
+        try {
+          const filterIndex = await this.pagefind.filters();
+          console.log('Available Pagefind filters:', filterIndex);
+
+          const filters = this.buildFilters(filterIndex);
+          this.allFilters = filters;
+          this.availableFilters = filters;
+          console.log('Processed filters:', this.availableFilters);
+        } catch (error) {
+          console.error('Failed to load filters:', error);
+        }
+      }
+    };
+  }
+  
+  
+  document.addEventListener('alpine:init', () => {
+    Alpine.store('search', {
+      open: false
+    });
+  });
+</script>
+
+<style>
+  [x-cloak] { display: none !important; }
+</style>
+
+
+        
+      
+    </div>
+    
+    <div class="page-body ">
+      
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <section id="section-resume-biography" class="relative  hbb-section blox-resume-biography  " style="padding: 0 0 0 0;">
+    
+    
+    <div class="home-section-bg " >
+      
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  
+    
+    
+      
+    
+  
+  
+  
+    
+    
+      
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+  
+  
+
+  
+    
+    
+
+    
+      
+      
+      
+      
+      
+      
+
+      
+        
+        
+          
+        
+
+        
+          
+          
+        
+
+        
+      
+    
+  
+
+  
+  
+  
+    
+      
+      <div class="w-full bg-gray-200 dark:bg-gray-900 flex flex-wrap items-center justify-center">
+        <div class="w-full bg-white rounded dark:bg-gray-800">
+          <div class="h-2/4 sm:h-64 overflow-hidden w-full">
+            <img class="w-full object-cover"
+                 srcset="/media/guangzhou_hu_cd1f08d4d62eaa7f.webp 768w, /media/guangzhou_hu_d25995b832ec8d5d.webp 1024w, /media/guangzhou_hu_7b4a75d08424fdac.webp 1366w, /media/guangzhou_hu_23b510fb0049da97.webp 1920w, /media/guangzhou_hu_9c7863f61c42ffff.webp 2560w"
+                 sizes="100vw"
+                 src="/media/guangzhou_hu_cd1f08d4d62eaa7f.webp"
+                 width="768" 
+                 height="432"
+                 alt="" />
+          </div>
+        </div>
+      </div>
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+
+
+  
+    
+      
+      
+      
+      
+      
+        
+      
+    
+  
+
+
+
+
+
+
+  
+
+
+  
+    
+    
+    
+    
+      
+      
+      
+      
+    
+    
+      
+      
+    
+  
+    
+    
+    
+    
+      
+      
+      
+      
+    
+    
+      
+      
+    
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="profile" class="resume-biography flex justify-center items-center flex-col dark:text-white">
+  
+
+  <div class="avatar-wrapper -mt-[105px]" style="width: 320px; height: 320px;">
+    
+    <img class="avatar rounded-lg bg-white dark:bg-gray-800 p-1" src="/media/authors/me_hu_844f3bac777746a9.jpg" alt="Dison Tsui"
+         width="320" height="320"
+         style="width: 320px; height: 320px; object-fit: cover;">
+    <span class="avatar-emoji">☕️</span>
+  </div>
+  
+
+  
+  
+  
+
+  
+  
+    <div class="text-3xl font-bold mb-2 mt-6">Dison Tsui</div>
+  <h3 class="font-semibold mb-1">Undergraduate in Information Engineering, School of System Science and Engineering, Sun Yat-sen University</h3>
+
+  
+  <div class="mb-2">
+    
+    
+    
+      
+      
+      
+      
+        
+      
+      <a href="https://www.sysu.edu.cn/" target="_blank" rel="noopener">
+        <div>Sun Yat-sen University</div>
+      </a>
+    
+  </div>
+  
+
+  
+  <ul class="network-icon dark:text-zinc-100">
+    
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="mailto:cuidsh@mail2.sysu.edu.cn"  aria-label="E-mail Me"
+           data-toggle="tooltip" data-placement="top" title="E-mail Me">
+          <svg style="height: 1.5rem;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M16.5 12a4.5 4.5 0 1 1-9 0a4.5 4.5 0 0 1 9 0Zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 1 0-2.636 6.364M16.5 12V8.25"/></svg>
+        </a>
+      </li>
+    
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <li>
+        <a href="https://github.com/TsuiDison" target="_blank" rel="noopener" aria-label="brands/github"
+          >
+          <svg style="height: 1.5rem;" fill="currentColor" viewBox="3 3 18 18"><path d="M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z"></path></svg>
+        </a>
+      </li>
+    
+  </ul>
+  
+
+  
+  <div class="pt-2 d-flex justify-content-center prose prose-slate lg:prose-xl dark:prose-invert">
+    <div class="bio-text" style="text-align: justify; font-size: 0.8em;">
+      Has rich practical experience in robotics, deep learning, etc., participated in multiple national-level competitions and won awards. Currently studying locomotion and manipulation related research, with strong interest in the application of reinforcement learning in robot control.
+    </div>
+  </div>
+  
+
+  
+  
+  
+  
+  
+    
+      
+    
+    
+  
+  <a href="/uploads/resume.pdf" target="_blank" rel="noopener" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg transition-colors hover:bg-gray-100 hover:text-gray-900 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-gray-900 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:text-white dark:focus:ring-gray-700"><svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+    <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
+    <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
+  </svg> Download Resume</a>
+  
+
+</div>
+
+  </section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <section id="section-experience1" class="relative  hbb-section blox-experience1  " >
+    
+    
+    <div class="home-section-bg " >
+      
+    </div>
+    
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    
+    
+    
+    <div class="w-full">
+      <h2 class="mb-10 text-3xl font-bold text-gray-900 dark:text-white text-center">Experience</h2>
+      <div class="relative">
+        <div class="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary-500 via-primary-400 to-primary-600/50"></div>
+        <div class="space-y-8">
+          
+          <div class="group relative pl-12 sm:pl-16">
+            <div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center">
+              <div class="relative">
+                <div class="absolute inset-0 w-8 h-8 bg-primary-500/30 rounded-full blur-md group-hover:bg-primary-500/50 transition-all duration-300"></div>
+                <div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-primary-500 rounded-full flex items-center justify-center group-hover:border-primary-400 group-hover:scale-110 transition-all duration-300">
+                  
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-primary-600 dark:text-primary-400"><path d="M216,56H176V48a24,24,0,0,0-24-24H104A24,24,0,0,0,80,48v8H40A16,16,0,0,0,24,72V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V72A16,16,0,0,0,216,56ZM96,48a8,8,0,0,1,8-8h48a8,8,0,0,1,8,8v8H96ZM216,72v41.61A184,184,0,0,1,128,136a184.07,184.07,0,0,1-88-22.38V72Zm0,128H40V131.64A200.19,200.19,0,0,0,128,152a200.25,200.25,0,0,0,88-20.37V200ZM104,112a8,8,0,0,1,8-8h32a8,8,0,0,1,0,16H112A8,8,0,0,1,104,112Z"></path></svg>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-4 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-primary-300 dark:hover:border-primary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none">
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary-600 dark:group-hover:text-primary-400">
+                Project Leader
+              </h3>
+              <p class="text-primary-600 dark:text-primary-400 font-medium mt-1">
+                Sun Yat-sen University Student Innovation and Entrepreneurship Project
+              </p>
+              <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <time>
+                  Sep 2024 – 
+                  Dec 2025
+                </time>
+              </div>
+              
+              <div class="text-gray-600 dark:text-gray-400 text-sm mt-3 leading-relaxed">
+                The project, supervised by <a href="https://ssse.sysu.edu.cn/teacher/252" target="_blank" rel="noopener">Hou Yanqing</a>, received a national-level excellent conclusion.
+The project mainly utilizes YOLO object detection algorithm, PID and adaptive control systems, connected via ROS2 communication architecture, to achieve an intelligent water cannon auto-aiming system, completed the predetermined goals, and obtained excellent conclusion.
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+
+    
+    
+    <div class="w-full">
+      <h2 class="mb-10 text-3xl font-bold text-gray-900 dark:text-white text-center">Education</h2>
+      <div class="relative">
+        <div class="absolute left-4 sm:left-6 top-0 bottom-0 w-0.5 bg-gradient-to-b from-secondary-500 via-secondary-400 to-secondary-600/50"></div>
+        <div class="space-y-8">
+          
+          <div class="group relative pl-12 sm:pl-16">
+            <div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center">
+              <div class="relative">
+                <div class="absolute inset-0 w-8 h-8 bg-secondary-500/30 rounded-full blur-md group-hover:bg-secondary-500/50 transition-all duration-300"></div>
+                <div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-secondary-500 rounded-full flex items-center justify-center group-hover:border-secondary-400 group-hover:scale-110 transition-all duration-300">
+                  
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-secondary-600 dark:text-secondary-400"><path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"></path></svg>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-4 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-secondary-300 dark:hover:border-secondary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none">
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400">
+                Bachelor of Information Engineering(udergraduate)
+              </h3>
+              <p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1">
+                Sun Yat-sen University - School of System Science and Engineering
+              </p>
+              <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <time>
+                  Sep 2024 – 
+                  Present
+                </time>
+              </div>
+              
+              <div class="text-gray-600 dark:text-gray-400 text-sm mt-3 leading-relaxed">
+                <p>(Top Talents Experimental Class)</p>
+<p>Specialization: Information Engineering
+Relevant Courses: Advanced Mathematics, Linear Algebra, Complex Analysis and Integration Transforms, Probability and Statistics, Electromagnetic Fields and Waves, Digital and Analog Circuits, Microcomputer Principles and Embedded Systems, Signal Systems, Data Structures and Algorithms, Numerical Computing Methods, Matrix Analysis, System Simulation Technology, Microwave Technology and Antennas, Automatic Control Principles, Communication Theory, ROS Robot Operating Systems, Introduction to Reinforcement Learning, Operations Research
+GPA: 3.94/4.0, Ranking: 5th in major</p>
+
+              </div>
+              
+            </div>
+          </div>
+          
+          <div class="group relative pl-12 sm:pl-16">
+            <div class="absolute left-0 sm:left-2 top-6 flex items-center justify-center">
+              <div class="relative">
+                <div class="absolute inset-0 w-8 h-8 bg-secondary-500/30 rounded-full blur-md group-hover:bg-secondary-500/50 transition-all duration-300"></div>
+                <div class="relative w-8 h-8 bg-white dark:bg-gray-900 border-2 border-secondary-500 rounded-full flex items-center justify-center group-hover:border-secondary-400 group-hover:scale-110 transition-all duration-300">
+                  
+                  
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 256 256" class="w-4 h-4 text-secondary-600 dark:text-secondary-400"><path d="M251.76,88.94l-120-64a8,8,0,0,0-7.52,0l-120,64a8,8,0,0,0,0,14.12L32,117.87v48.42a15.91,15.91,0,0,0,4.06,10.65C49.16,191.53,78.51,216,128,216a130,130,0,0,0,48-8.76V240a8,8,0,0,0,16,0V199.51a115.63,115.63,0,0,0,27.94-22.57A15.91,15.91,0,0,0,224,166.29V117.87l27.76-14.81a8,8,0,0,0,0-14.12ZM128,200c-43.27,0-68.72-21.14-80-33.71V126.4l76.24,40.66a8,8,0,0,0,7.52,0L176,143.47v46.34C163.4,195.69,147.52,200,128,200Zm80-33.75a97.83,97.83,0,0,1-16,14.25V134.93l16-8.53ZM188,118.94l-.22-.13-56-29.87a8,8,0,0,0-7.52,14.12L171,128l-43,22.93L25,96,128,41.07,231,96Z"></path></svg>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="relative bg-white dark:bg-white/[0.02] backdrop-blur-sm rounded-xl border border-gray-200 dark:border-white/[0.06] p-4 hover:bg-gray-50 dark:hover:bg-white/[0.04] hover:border-secondary-300 dark:hover:border-secondary-500/30 transition-all duration-300 group-hover:translate-x-1 shadow-sm dark:shadow-none">
+              <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-secondary-600 dark:group-hover:text-secondary-400">
+                Major in Physics
+              </h3>
+              <p class="text-secondary-600 dark:text-secondary-400 font-medium mt-1">
+                Sun Yat-sen University - School of Science
+              </p>
+              <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 mt-1">
+                <time>
+                  Sep 2023 – 
+                  Aug 2024
+                </time>
+              </div>
+              
+              <div class="text-gray-600 dark:text-gray-400 text-sm mt-3 leading-relaxed">
+                Transfer from Physics to Information Engineering program
+              </div>
+              
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+  </section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <section id="section-resume-skills" class="relative  hbb-section blox-resume-skills  " >
+    
+    
+    <div class="home-section-bg " >
+      
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+
+      
+      
+      
+      
+
+      
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+      
+
+      
+        
+      
+    
+  
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+
+      
+      
+      
+      
+
+      
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+      
+
+      
+        
+      
+    
+  
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+
+      
+      
+      
+      
+
+      
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+      
+
+      
+        
+      
+    
+  
+    
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      
+
+      
+      
+      
+      
+
+      
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+          
+            
+            
+            
+            
+            
+
+            
+            
+            
+            
+            
+
+            
+              
+            
+          
+        
+      
+
+      
+        
+      
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    Skills &amp; Hobbies
+  </div>
+
+  
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2    items-start max-w-prose mx-auto gap-3 px-6 md:px-0">
+
+  
+  
+  
+  <div class="w-full">
+    <div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">
+      Programming Languages
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+      <span class="skills-icon inline-block">
+        <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><linearGradient id="deviconPython0" x1="70.252" x2="170.659" y1="1237.476" y2="1151.089" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5A9FD4"/><stop offset="1" stop-color="#306998"/></linearGradient><linearGradient id="deviconPython1" x1="209.474" x2="173.62" y1="1098.811" y2="1149.537" gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#FFD43B"/><stop offset="1" stop-color="#FFE873"/></linearGradient><path fill="url(#deviconPython0)" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007c-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521c-2.268 9.405-2.368 15.275 0 25.096c1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837c-4.244-.706-8.645-1.027-12.866-1.008M50.037 9.557c2.55 0 4.634 2.117 4.634 4.721c0 2.593-2.083 4.69-4.634 4.69c-2.56 0-4.633-2.097-4.633-4.69c-.001-2.604 2.073-4.721 4.633-4.721" transform="translate(0 10.26)"/><path fill="url(#deviconPython1)" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547c7.816 2.297 15.312 2.713 24.665 0c6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519c2.578-7.735 2.467-15.174 0-25.096c-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692c0 2.602-2.074 4.719-4.634 4.719c-2.55 0-4.633-2.117-4.633-4.719c0-2.595 2.083-4.692 4.633-4.692" transform="translate(0 10.26)"/><radialGradient id="deviconPython2" cx="1825.678" cy="444.45" r="26.743" gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"/><stop offset="1" stop-color="#7F7F7F" stop-opacity="0"/></radialGradient><path fill="url(#deviconPython2)" d="M97.309 119.597c0 3.543-14.816 6.416-33.091 6.416c-18.276 0-33.092-2.873-33.092-6.416c0-3.544 14.815-6.417 33.092-6.417c18.275 0 33.091 2.872 33.091 6.417" opacity=".444"/></svg>
+      </span>
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        Python
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 100%; "></div>
+      </div>
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+      <span class="skills-icon inline-block">
+        <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#00599c" d="M118.766 95.82c.89-1.543 1.441-3.28 1.441-4.843V36.78c0-1.558-.55-3.297-1.441-4.84l-55.32 31.94Zm0 0"/><path fill="#004482" d="m68.36 126.586l46.933-27.094c1.352-.781 2.582-2.129 3.473-3.672l-55.32-31.94L8.12 95.82c.89 1.543 2.121 2.89 3.473 3.672l46.933 27.094c2.703 1.562 7.13 1.562 9.832 0Zm0 0"/><path fill="#659ad2" d="M118.766 31.941c-.891-1.546-2.121-2.894-3.473-3.671L68.359 1.172c-2.703-1.563-7.129-1.563-9.832 0L11.594 28.27C8.89 29.828 6.68 33.66 6.68 36.78v54.196c0 1.562.55 3.3 1.441 4.843L63.445 63.88Zm0 0"/><path fill="#fff" d="M63.445 26.035c-20.867 0-37.843 16.977-37.843 37.844s16.976 37.844 37.843 37.844c13.465 0 26.024-7.247 32.77-18.91L79.84 73.335c-3.38 5.84-9.66 9.465-16.395 9.465c-10.433 0-18.922-8.488-18.922-18.922c0-10.434 8.49-18.922 18.922-18.922c6.73 0 13.017 3.629 16.39 9.465l16.38-9.477c-6.75-11.664-19.305-18.91-32.77-18.91zM92.88 57.57v4.207h-4.207v4.203h4.207v4.207h4.203V65.98h4.203v-4.203h-4.203V57.57zm15.766 0v4.207h-4.204v4.203h4.204v4.207h4.207V65.98h4.203v-4.203h-4.203V57.57z"/></svg>
+      </span>
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        C/C++
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 80%; "></div>
+      </div>
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+      <span class="skills-icon inline-block">
+        <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><linearGradient id="deviconMatlab0" x1="16.803" x2="15.013" y1="16.631" y2="22.411" gradientTransform="matrix(4 0 0 -4 0 128)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#512"/><stop offset=".23" stop-color="#523"/><stop offset=".36" stop-color="#534"/><stop offset=".51" stop-color="#645"/><stop offset=".66" stop-color="#568"/><stop offset=".84" stop-color="#29d"/></linearGradient><linearGradient id="deviconMatlab1" x1="29.71" x2="11.71" y1="18.983" y2="14.563" gradientTransform="scale(4)" gradientUnits="userSpaceOnUse"><stop offset=".081" stop-color="#c33"/><stop offset=".189" stop-color="#de5239"/><stop offset=".313" stop-color="#f06e3e"/><stop offset=".421" stop-color="#fa8042"/><stop offset=".5" stop-color="#fe8643"/><stop offset=".58" stop-color="#fa7f42"/><stop offset=".696" stop-color="#ef6c3e"/><stop offset=".833" stop-color="#dc4c37"/><stop offset=".916" stop-color="#cf3633"/></linearGradient></defs><path fill="#49d" d="m8 70.2l31.879-12.88a82.62 82.62 0 0 1 10.883-11.8c2.636-1.399 7.597-.641 16.68-11.918c8.796-11 11.597-20.403 15.718-20.403c6.52 0 11.32 14.082 18.602 35.403A461.75 461.75 0 0 0 120 96.48c-7.602-7.082-14.078-14.718-21.48-14.52c-6.88.161-14.52 8.321-22.88 18.802C69 109.16 60.2 114.922 56.763 114.8c0 0-8.883-25.121-16.32-29.2a10.563 10.563 0 0 0-9.563.797L8 70.16zm0 0"/><path fill="url(#deviconMatlab0)" d="M79.2 16.078c-2.68 3.602-5.92 10.203-11.76 17.524c-9.082 11.277-14 10.52-16.68 11.918a78.673 78.673 0 0 0-10.882 11.8l13.2 9.64C64.28 51.68 70.28 35.122 74.96 24.399a54.649 54.649 0 0 1 4.238-8.32zm0 0"/><path fill="url(#deviconMatlab1)" d="M83.2 13.2c-8.72 0-14.68 45.921-46.88 71.562c9.04-1.48 16.88 20.957 20.48 30.039c16-2.723 28.802-33.32 41.72-32.84c7.402.277 13.878 7.437 21.48 14.52C102.64 60 94.52 13.198 83.2 13.198zm0 0"/></svg>
+      </span>
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        MATLAB
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 80%; "></div>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  
+  <div class="w-full">
+    <div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">
+      Simulation &amp; frameworks
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+      <span class="skills-icon inline-block">
+        <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#22314e" d="M33.875 22.45c0 6.898-5.418 12.488-12.102 12.488c-6.683 0-12.101-5.59-12.101-12.489c0-6.894 5.418-12.484 12.101-12.484c6.684 0 12.102 5.59 12.102 12.484Zm0 42.55c0 6.895-5.418 12.484-12.102 12.484c-6.683 0-12.101-5.59-12.101-12.484c0-6.895 5.418-12.484 12.101-12.484c6.684 0 12.102 5.59 12.102 12.484m0 42.55c0 6.895-5.418 12.485-12.102 12.485c-6.683 0-12.101-5.59-12.101-12.484c0-6.895 5.418-12.489 12.101-12.489c6.684 0 12.102 5.594 12.102 12.489ZM76.102 65c0 6.895-5.418 12.484-12.102 12.484S51.898 71.894 51.898 65c0-6.895 5.418-12.484 12.102-12.484S76.102 58.106 76.102 65m0-42.55c0 6.898-5.418 12.488-12.102 12.488s-12.102-5.59-12.102-12.489c0-6.894 5.418-12.484 12.102-12.484s12.102 5.59 12.102 12.484ZM118.328 65c0 6.895-5.418 12.484-12.101 12.484c-6.684 0-12.102-5.59-12.102-12.484c0-6.895 5.422-12.484 12.102-12.484c6.683 0 12.101 5.59 12.101 12.484m0-42.55c0 6.898-5.418 12.488-12.101 12.488c-6.684 0-12.102-5.59-12.102-12.489c0-6.894 5.422-12.484 12.102-12.484c6.683 0 12.101 5.59 12.101 12.484Zm0 85.1c0 6.895-5.418 12.485-12.101 12.485c-6.684 0-12.102-5.59-12.102-12.484c0-6.895 5.422-12.489 12.102-12.489c6.683 0 12.101 5.594 12.101 12.489Zm-42.226 0c0 6.895-5.418 12.485-12.102 12.485s-12.102-5.59-12.102-12.484c0-6.895 5.418-12.489 12.102-12.489s12.102 5.594 12.102 12.489Zm0 0"/></svg>
+      </span>
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        ROS
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 100%; "></div>
+      </div>
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+      <span class="skills-icon inline-block">
+        <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#fff" d="m14.428 38.099l.651 54.711l47.547 28.335l2.28-26.38S91.612 78.48 89.657 77.179c-1.952-1.302-75.23-39.08-75.23-39.08z"/><path fill="#231f20" d="m60.493 68.22l1.61 1a3.591 3.591 0 0 0 1.892.539c.658 0 1.315-.18 1.894-.542l1.614-1.005l16.37 10.139l-21.857 13.61a3.58 3.58 0 0 0-1.69 3.051l.065 22.308L20.904 92.8ZM17.565 41.564L53.697 64L17.565 86.436Zm99.814 22.365a3.583 3.583 0 0 0-5.48-3.032L90.662 74.12l-16.37-10.136l41.483-25.83a3.587 3.587 0 0 0 1.69-3.048a3.586 3.586 0 0 0-1.697-3.042L65.882 1.175a3.583 3.583 0 0 0-3.778.003L12.218 32.154a3.584 3.584 0 0 0-1.693 3.045V92.8a3.585 3.585 0 0 0 1.693 3.046l49.886 30.976c.024.013.05.024.075.039c.026.015.05.034.077.05c.058.031.117.054.175.082c.06.03.117.06.177.083c.093.04.188.073.283.102c.056.02.111.04.168.056c.107.03.215.05.324.068c.047.006.093.02.14.026c.156.021.314.034.471.034h.001c.326 0 .653-.045.97-.137h.004a2.92 2.92 0 0 0 .36-.13c.036-.013.074-.023.11-.038c.098-.043.192-.098.288-.152c.052-.03.106-.053.158-.083l.002-.002l.002-.002l.095-.06l49.787-30.912a3.585 3.585 0 0 0 1.693-3.057z"/><path fill="#fff" d="m67.501 96.99l.059 20.355l42.73-26.534l-.06-20.43L67.5 96.989"/><path fill="#f58113" d="m20.904 35.199l43.09 26.755l43.091-26.833L63.998 8.44z"/></svg>
+      </span>
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        Gazebo
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 80%; "></div>
+      </div>
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+      <span class="skills-icon inline-block">
+        <svg style="height: 1em;" height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>Nvidia</title><path d="M10.212 8.976V7.62c.127-.01.256-.017.388-.021 3.596-.117 5.957 3.184 5.957 3.184s-2.548 3.647-5.282 3.647a3.227 3.227 0 01-1.063-.175v-4.109c1.4.174 1.681.812 2.523 2.258l1.873-1.627a4.905 4.905 0 00-3.67-1.846 6.594 6.594 0 00-.729.044m0-4.476v2.025c.13-.01.259-.019.388-.024 5.002-.174 8.261 4.226 8.261 4.226s-3.743 4.69-7.643 4.69c-.338 0-.675-.031-1.007-.092v1.25c.278.038.558.057.838.057 3.629 0 6.253-1.91 8.794-4.169.421.347 2.146 1.193 2.501 1.564-2.416 2.083-8.048 3.763-11.24 3.763-.308 0-.603-.02-.894-.048V19.5H24v-15H10.21zm0 9.756v1.068c-3.356-.616-4.287-4.21-4.287-4.21a7.173 7.173 0 014.287-2.138v1.172h-.005a3.182 3.182 0 00-2.502 1.178s.615 2.276 2.507 2.931m-5.961-3.3c1.436-1.935 3.604-3.148 5.961-3.336V6.523C5.81 6.887 2 10.723 2 10.723s2.158 6.427 8.21 7.015v-1.166C5.77 16 4.25 10.958 4.25 10.958h-.002z" fill="#74B71B" fill-rule="nonzero"></path></svg>
+      </span>
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        Isaac Lab
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 80%; "></div>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  
+  <div class="w-full">
+    <div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">
+      Hardware
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        STM32
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 60%; "></div>
+      </div>
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+      <span class="skills-icon inline-block">
+        <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#E95420" d="M104.663 0H24v128h80.663z"/><path fill="#fff" d="M42.443 90.31c4.611 0 8.35-3.768 8.35-8.416c0-4.648-3.739-8.416-8.35-8.416c-4.612 0-8.35 3.768-8.35 8.416c0 4.648 3.738 8.416 8.35 8.416m34.778-18.454c4.612 0 8.35-3.768 8.35-8.416c0-4.648-3.738-8.416-8.35-8.416c-4.611 0-8.35 3.768-8.35 8.416c0 4.648 3.739 8.416 8.35 8.416m-15.945 31.702c-6.016-1.299-11.042-5.17-13.868-10.662a11.934 11.934 0 0 1-7.14.883c3.419 8.464 10.67 14.611 19.573 16.535c1.953.422 3.943.627 5.93.614a12.107 12.107 0 0 1-2.444-7.037a20.048 20.048 0 0 1-2.048-.336zm14.066 8.461c4.612 0 8.35-3.768 8.35-8.416c0-4.648-3.738-8.416-8.35-8.416c-4.611 0-8.35 3.768-8.35 8.416c0 4.648 3.739 8.416 8.35 8.416m11.62-11.507c2.597-3.3 4.426-7.2 5.305-11.344a27.771 27.771 0 0 0-3.937-20.963a12.1 12.1 0 0 1-4.695 5.542a20.736 20.736 0 0 1 1.93 13.975a20.658 20.658 0 0 1-2.597 6.521a12.092 12.092 0 0 1 3.997 6.272zM41.8 69.824a11.785 11.785 0 0 1 3.156.256c1.361.294 2.64.813 3.812 1.549c3.76-5.45 9.826-8.72 16.399-8.842a12.213 12.213 0 0 1 2.534-6.826c-10.503-.838-20.708 4.625-25.905 13.866z"/></svg>
+      </span>
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        Linux
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 100%; "></div>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  
+  <div class="w-full">
+    <div class="mb-5 text-xl font-bold text-gray-900 dark:text-white">
+      Deep Learning
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+      <span class="skills-icon inline-block">
+        <svg style="height: 1em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><path fill="#EE4C2C" d="m100.1 38.3l-9.2 9.2c15.1 15.1 15.1 39.4 0 54.3c-15.1 15.1-39.4 15.1-54.3 0c-15.1-15.1-15.1-39.4 0-54.3l24-24l3.4-3.4V2L27.8 38.2C7.7 58.3 7.7 90.8 27.8 111s52.6 20.1 72.4 0c20.1-20.2 20.1-52.5-.1-72.7"/><circle cx="82.1" cy="29.4" r="6.7" fill="#EE4C2C" transform="rotate(-88.939 82.069 29.398)scale(.99997)"/></svg>
+      </span>
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        PyTorch
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 100%; "></div>
+      </div>
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+      <span class="skills-icon inline-block">
+        <svg style="height: 1em;" fill="currentColor" fill-rule="evenodd" height="1em" style="flex:none;line-height:1" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><title>OpenAI</title><path d="M9.205 8.658v-2.26c0-.19.072-.333.238-.428l4.543-2.616c.619-.357 1.356-.523 2.117-.523 2.854 0 4.662 2.212 4.662 4.566 0 .167 0 .357-.024.547l-4.71-2.759a.797.797 0 00-.856 0l-5.97 3.473zm10.609 8.8V12.06c0-.333-.143-.57-.429-.737l-5.97-3.473 1.95-1.118a.433.433 0 01.476 0l4.543 2.617c1.309.76 2.189 2.378 2.189 3.948 0 1.808-1.07 3.473-2.76 4.163zM7.802 12.703l-1.95-1.142c-.167-.095-.239-.238-.239-.428V5.899c0-2.545 1.95-4.472 4.591-4.472 1 0 1.927.333 2.712.928L8.23 5.067c-.285.166-.428.404-.428.737v6.898zM12 15.128l-2.795-1.57v-3.33L12 8.658l2.795 1.57v3.33L12 15.128zm1.796 7.23c-1 0-1.927-.332-2.712-.927l4.686-2.712c.285-.166.428-.404.428-.737v-6.898l1.974 1.142c.167.095.238.238.238.428v5.233c0 2.545-1.974 4.472-4.614 4.472zm-5.637-5.303l-4.544-2.617c-1.308-.761-2.188-2.378-2.188-3.948A4.482 4.482 0 014.21 6.327v5.423c0 .333.143.571.428.738l5.947 3.449-1.95 1.118a.432.432 0 01-.476 0zm-.262 3.9c-2.688 0-4.662-2.021-4.662-4.519 0-.19.024-.38.047-.57l4.686 2.71c.286.167.571.167.856 0l5.97-3.448v2.26c0 .19-.07.333-.237.428l-4.543 2.616c-.619.357-1.356.523-2.117.523zm5.899 2.83a5.947 5.947 0 005.827-4.756C22.287 18.339 24 15.84 24 13.296c0-1.665-.713-3.282-1.998-4.448.119-.5.19-.999.19-1.498 0-3.401-2.759-5.947-5.946-5.947-.642 0-1.26.095-1.88.31A5.962 5.962 0 0010.205 0a5.947 5.947 0 00-5.827 4.757C1.713 5.447 0 7.945 0 10.49c0 1.666.713 3.283 1.998 4.448-.119.5-.19 1-.19 1.499 0 3.401 2.759 5.946 5.946 5.946.642 0 1.26-.095 1.88-.309a5.96 5.96 0 004.162 1.713z"></path></svg>
+      </span>
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        LLM Deployment
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 80%; "></div>
+      </div>
+      
+    </div>
+    
+
+    <div class="skills-content">
+
+      
+
+      
+      <span class="skills-name text-gray-700 dark:text-gray-300">
+        LoRA Fine-tuning
+        
+      </span>
+      
+      
+      
+      
+        
+        
+          
+        
+      
+      
+      
+      
+      
+      <div class="skills-wrapper" >
+        <div class="skills-percent" style="width: 80%; "></div>
+      </div>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+  </section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <section id="section-awards1" class="relative  hbb-section blox-awards1  " >
+    
+    
+    <div class="home-section-bg " >
+      
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+      
+        
+      
+        
+      
+        
+      
+    
+  
+    
+      
+        
+      
+        
+      
+        
+      
+    
+  
+    
+      
+        
+      
+        
+      
+    
+  
+
+
+
+
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+    
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+        
+        
+      
+    
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+<div class="w-full mx-auto">
+  <div class="mb-12 text-center">
+    <h2 class="text-3xl font-bold text-gray-900 dark:text-white">
+      Awards
+    </h2>
+    
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start max-w-6xl mx-auto">
+    
+    
+    
+      
+    
+
+    
+      
+        
+        <div class="category-group flex flex-col gap-6" style="min-width: 0;">
+          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 border-b-2 border-primary-500 pb-2 uppercase tracking-wider mb-4">
+            Ai&amp; Robotics
+          </h3>
+          <div class="flex flex-col gap-6">
+            
+            
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+            
+            
+              
+              <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                
+                  <div class="mb-4 overflow-hidden rounded-lg">
+                    
+                    
+                    
+                      <img src="https://www.aicomp.cn/wp-content/themes/aicomp/uploads/new_banner_4.webp" alt="AIC Global Campus AI Algorithm Elite Competition" class="w-full h-auto object-cover max-h-64">
+                    
+                  </div>
+                
+                
+                
+                
+                
+                  
+                  
+                  
+                    
+                  
+                
+                
+                <a href="https://www.aicomp.cn/" target="_blank" rel="noopener">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
+                  
+                  <span>AIC Global Campus AI Algorithm Elite Competition</span>
+                </h5>
+                </a>
+
+                <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+                  
+                  AIC &#8729; 
+                  
+                  
+                  
+                    
+                    2025-12
+                  
+                </div>
+
+                
+                  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose prose-sm max-w-none"><ul>
+<li>National 3rd Prize / Provincial 1st Prize/</li>
+<li><a href="https://reg.aicomp.cn/special/phb/detail?id=4729896503479504975&amp;rwId=4713881620858409058&amp;stbh=4715066941826535457" target="_blank" rel="noopener">ranked 16/100 place globally</a></li>
+<li>Intelligent Travel Planning Based on AI</li>
+<li>Achieved over 80% accuracy on validation datasets</li>
+</ul>
+</div>
+                
+
+                
+                
+              </div>
+            
+              
+              <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                
+                  <div class="mb-4 overflow-hidden rounded-lg">
+                    
+                    
+                      
+                      
+                    
+                    
+                      <img src="/media/ship.jpg" alt="National Maritime Vehicle Design and Manufacturing Competition" class="w-full h-auto object-cover max-h-64">
+                    
+                  </div>
+                
+                
+                
+                
+                
+                  
+                  
+                  
+                    
+                  
+                
+                
+                <a href="http://www.csname.org.cn/cms/news/874.html" target="_blank" rel="noopener">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
+                  
+                  <span>National Maritime Vehicle Design and Manufacturing Competition</span>
+                </h5>
+                </a>
+
+                <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+                  
+                  Provincial Competition &#8729; 
+                  
+                  
+                  
+                    
+                    2025-07
+                  
+                </div>
+
+                
+                  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose prose-sm max-w-none"><ul>
+<li><strong>Provincial 2nd Prize (South China Region)</strong></li>
+<li>Designed a catamaran with dual ducted thrusters and a modular 3D-printed release mechanism.</li>
+<li>Built an autonomous navigation system using Mid-360 LiDAR (Fast-LIO/Nav2) for radio-denied missions.</li>
+<li>Integrated long-range control (ELRS 25km+) and HD video feedback (DJI O4 Pro).</li>
+</ul>
+</div>
+                
+
+                
+                
+              </div>
+            
+              
+              <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                
+                  <div class="mb-4 overflow-hidden rounded-lg">
+                    
+                    
+                      
+                      
+                    
+                    
+                      <img src="/media/shenda.jpg" alt="Shenda Cup Intelligent Unmanned System Application Challenge" class="w-full h-auto object-cover max-h-64">
+                    
+                  </div>
+                
+                
+                
+                
+                
+                  
+                  
+                  
+                    
+                  
+                
+                
+                <a href="https://mm.scimeeting.cn/cn/minisite/index/31407" target="_blank" rel="noopener">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
+                  
+                  <span>Shenda Cup Intelligent Unmanned System Application Challenge</span>
+                </h5>
+                </a>
+
+                <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+                  
+                  National Competition &#8729; 
+                  
+                  
+                  
+                    
+                    2025-07
+                  
+                </div>
+
+                
+                  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose prose-sm max-w-none"><ul>
+<li><a href="https://mp.weixin.qq.com/s/hq63YKUIvrPeJf1lN-YJPQ" target="_blank" rel="noopener">National 1st Prize</a></li>
+</ul>
+<p><strong>Project Overview:</strong></p>
+<p>Based on ROS1 system, constructed a complete mobile robot path planning system with mapping, relocalization, and navigation. Additionally built a robotic arm control system with visual recognition, position solving, and grasping control. Finally achieved autonomous navigation and task completion in target areas through ROS1 message communication mechanism and behavior tree planning.</p>
+</div>
+                
+
+                
+                
+              </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        <div class="category-group flex flex-col gap-6" style="min-width: 0;">
+          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 border-b-2 border-primary-500 pb-2 uppercase tracking-wider mb-4">
+            Mathematical
+          </h3>
+          <div class="flex flex-col gap-6">
+            
+            
+            
+              
+              
+            
+              
+              
+            
+              
+              
+            
+            
+            
+              
+              <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                
+                
+                
+                
+                
+                  
+                  
+                  
+                    
+                  
+                
+                
+                <a href="https://dxs.moe.gov.cn/zx/a/hd_sxjm_smkx/251008/2020598.shtml" target="_blank" rel="noopener">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
+                  
+                  <span>National University Student Mathematical Modeling Competition</span>
+                </h5>
+                </a>
+
+                <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+                  
+                  Guangdong Province &#8729; 
+                  
+                  
+                  
+                    
+                    2025-09
+                  
+                </div>
+
+                
+                  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose prose-sm max-w-none">1st Prize (Guangdong Region)</div>
+                
+
+                
+                
+              </div>
+            
+              
+              <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                
+                
+                
+                
+                
+                  
+                  
+                  
+                    
+                  
+                
+                
+                <a href="https://www.cmathc.org.cn/sqzx/372.html" target="_blank" rel="noopener">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
+                  
+                  <span>National University Student Mathematics Competition</span>
+                </h5>
+                </a>
+
+                <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+                  
+                  Guangdong Province &#8729; 
+                  
+                  
+                  
+                    
+                    2024-11
+                  
+                </div>
+
+                
+                  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose prose-sm max-w-none">2nd Prize</div>
+                
+
+                
+                
+              </div>
+            
+              
+              <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                
+                
+                
+                
+                
+                
+                
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
+                  
+                  <span>Huashu Cup 2nd International University Student Mathematical Modeling Competition</span>
+                </h5>
+                
+
+                <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+                  
+                  International Competition &#8729; 
+                  
+                  
+                  
+                    
+                    2024-01
+                  
+                </div>
+
+                
+                  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose prose-sm max-w-none">Outstanding Prize (Top Award)</div>
+                
+
+                
+                
+              </div>
+            
+          </div>
+        </div>
+        
+      
+        
+        <div class="category-group flex flex-col gap-6" style="min-width: 0;">
+          <h3 class="text-xl font-bold text-gray-800 dark:text-gray-200 border-b-2 border-primary-500 pb-2 uppercase tracking-wider mb-4">
+            Scholarships
+          </h3>
+          <div class="flex flex-col gap-6">
+            
+            
+            
+              
+              
+            
+              
+              
+            
+            
+            
+              
+              <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                
+                
+                
+                
+                
+                
+                
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
+                  
+                  <span>Sun Yat-sen University Excellence Scholarship 2025</span>
+                </h5>
+                
+
+                <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+                  
+                  Sun Yat-sen University &#8729; 
+                  
+                  
+                  
+                    
+                    2025-11
+                  
+                </div>
+
+                
+                  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose prose-sm max-w-none">School-level 2nd Prize</div>
+                
+
+                
+                
+              </div>
+            
+              
+              <div class="w-full p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                
+                
+                
+                
+                
+                
+                
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
+                  
+                  <span>Sun Yat-sen University Excellence Scholarship 2024</span>
+                </h5>
+                
+
+                <div class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-300">
+                  
+                  Sun Yat-sen University &#8729; 
+                  
+                  
+                  
+                    
+                    2024-11
+                  
+                </div>
+
+                
+                  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose prose-sm max-w-none">School-level 2nd Prize</div>
+                
+
+                
+                
+              </div>
+            
+          </div>
+        </div>
+        
+      
+    
+  </div>
+</div>
+
+
+  </section>
+
+  
+
+  
+  
+    
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+  <section id="section-resume-languages" class="relative  hbb-section blox-resume-languages  " >
+    
+    
+    <div class="home-section-bg " >
+      
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+    
+      
+      
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      
+        
+      
+
+      
+      
+
+      
+        
+      
+    
+  
+    
+      
+      
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      
+        
+      
+
+      
+      
+
+      
+        
+      
+    
+  
+    
+      
+      
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      
+        
+      
+
+      
+      
+
+      
+        
+      
+    
+  
+    
+      
+      
+      
+      
+
+      
+      
+      
+      
+
+      
+      
+      
+        
+      
+
+      
+      
+
+      
+        
+      
+    
+  
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    Languages
+  </div>
+
+  
+
+  <div class="flex items-center flex-col lg:flex-row gap-y-10 lg:gap-y-0 lg:gap-x-8">
+    
+    
+    
+    
+    
+
+    <div class="flex flex-col items-center">
+      <div class="flex items-center justify-center w-28 h-28">
+        <svg class="transform -rotate-90" viewBox="0 0 288 288">
+          <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                  class="text-gray-200 dark:text-gray-700" />
+          <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                  class="text-primary-600 dark:text-primary-300"
+                  style="stroke-dasharray: calc(2 * 22 / 7 * 120); stroke-dashoffset: calc((2 * 22 / 7 * 120) - ((2 * 22 / 7 * 120) * 100/100))" />
+        </svg>
+        <span class="absolute text-3xl">100%</span>
+      </div>
+      <span class="text-1xl">Chinese</span>
+      
+    </div>
+    
+    
+    
+    
+    
+
+    <div class="flex flex-col items-center">
+      <div class="flex items-center justify-center w-28 h-28">
+        <svg class="transform -rotate-90" viewBox="0 0 288 288">
+          <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                  class="text-gray-200 dark:text-gray-700" />
+          <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                  class="text-primary-600 dark:text-primary-300"
+                  style="stroke-dasharray: calc(2 * 22 / 7 * 120); stroke-dashoffset: calc((2 * 22 / 7 * 120) - ((2 * 22 / 7 * 120) * 100/100))" />
+        </svg>
+        <span class="absolute text-3xl">100%</span>
+      </div>
+      <span class="text-1xl">Cantonese</span>
+      
+    </div>
+    
+    
+    
+    
+    
+
+    <div class="flex flex-col items-center">
+      <div class="flex items-center justify-center w-28 h-28">
+        <svg class="transform -rotate-90" viewBox="0 0 288 288">
+          <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                  class="text-gray-200 dark:text-gray-700" />
+          <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                  class="text-primary-600 dark:text-primary-300"
+                  style="stroke-dasharray: calc(2 * 22 / 7 * 120); stroke-dashoffset: calc((2 * 22 / 7 * 120) - ((2 * 22 / 7 * 120) * 80/100))" />
+        </svg>
+        <span class="absolute text-3xl">80%</span>
+      </div>
+      <span class="text-1xl">English</span>
+      
+    </div>
+    
+    
+    
+    
+    
+
+    <div class="flex flex-col items-center">
+      <div class="flex items-center justify-center w-28 h-28">
+        <svg class="transform -rotate-90" viewBox="0 0 288 288">
+          <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                  class="text-gray-200 dark:text-gray-700" />
+          <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30" fill="transparent"
+                  class="text-primary-600 dark:text-primary-300"
+                  style="stroke-dasharray: calc(2 * 22 / 7 * 120); stroke-dashoffset: calc((2 * 22 / 7 * 120) - ((2 * 22 / 7 * 120) * 20/100))" />
+        </svg>
+        <span class="absolute text-3xl">20%</span>
+      </div>
+      <span class="text-1xl">French</span>
+      
+    </div>
+    
+  </div>
+
+</div>
+
+  </section>
+
+  
+
+
+    </div>
+    <div class="page-footer">
+      <footer class="container mx-auto flex flex-col justify-items-center text-sm leading-6 mt-24 mb-4 text-slate-700 dark:text-slate-200">
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+  
+  
+
+
+
+
+
+  <p class="powered-by footer-license-icons text-center pb-2">
+    <a class="inline-flex items-center justify-center gap-2 align-middle" href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+    <a class="inline-flex items-center justify-center gap-2 align-middle" href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <svg class="h-6 w-6 inline-block align-middle text-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M253.8 214.9l-33.2 17.3c-9.4-19.6-25.2-19.9-27.5-19.9-22.1 0-33.2 14.6-33.2 43.8 0 23.6 9.2 43.8 33.2 43.8 14.5 0 24.6-7.1 30.6-21.3l30.6 15.5c-6.2 11.5-25.7 39-65.1 39-22.6 0-74-10.3-74-77 0-58.7 43-77.1 72.6-77.1 30.7 0 52.7 11.9 66 35.9zm143 0l-32.8 17.3c-9.5-19.8-25.7-19.9-27.9-19.9-22.1 0-33.2 14.6-33.2 43.8 0 23.5 9.2 43.8 33.2 43.8 14.4 0 24.6-7.1 30.5-21.3l31 15.5c-2.1 3.8-21.4 39-65.1 39-22.7 0-74-9.9-74-77 0-58.7 43-77.1 72.6-77.1 30.7 0 52.6 11.9 65.6 35.9zM255.6 8C112.7 8 8 123.1 8 256.1 8 394.5 121.6 504.1 255.6 504.1 385.5 504.1 504 403.2 504 256.1 504 118.2 397.4 8 255.6 8zm.9 450.8c-112.5 0-203.7-93-203.7-202.8 0-105.4 85.4-203.3 203.7-203.3 112.5 0 202.8 89.5 202.8 203.3 0 121.7-99.7 202.8-202.8 202.8z"/></svg>
+      <svg class="h-6 w-6 inline-block align-middle text-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M322.9 194.4l0 101.4-28.3 0 0 120.5-77.1 0 0-120.4-28.3 0 0-101.5c0-4.4 1.6-8.2 4.6-11.3 3.1-3.1 6.9-4.7 11.3-4.7l101.9 0c4.1 0 7.8 1.6 11.1 4.7 3.1 3.2 4.8 6.9 4.8 11.3zm-32.5-64.5a34.5 34.5 0 1 1 -69 .8 34.5 34.5 0 1 1 69-.8zM255.6 8C397.4 8 504 118.1 504 256 504 403.1 385.5 504 255.6 504 121.6 504 8 394.5 8 256 8 123.1 112.7 8 255.6 8zm.8 44.7c-118.2 0-203.7 97.9-203.7 203.3 0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8 .1-113.8-90.2-203.3-202.8-203.3z"/></svg>
+      
+        <svg class="h-6 w-6 inline-block align-middle text-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M255.6 8C395.4 8 504 115.9 504 256 504 403.2 385.5 504 255.6 504 121.1 504 8 393.2 8 256 8 123.1 112.7 8 255.6 8zM63.8 189.1c-7.4 20.4-11.1 42.7-11.1 66.9 0 110.9 92.1 202.4 203.7 202.4 122.4 0 177.2-101.8 178.5-104.1l-93.4-41.6c-7.7 37.1-41.2 53-68.2 55.4l0 38.1-28.8 0 0-38.2c-27.5-.3-52.6-10.2-75.3-29.7l34.1-34.5c31.7 29.4 86.4 31.8 86.4-2.2 0-6.2-2.2-11.2-6.6-15.1-14.2-6-1.8-.1-219.3-97.4zM256.4 52.3C218 52.3 144 61 85.9 145.3l94.8 42.5c10-31.3 40.4-42.9 63.8-44.3l0-38.1 28.8 0 0 38.1c22.7 1.2 43.4 8.9 62 23L303 199.7c-42.7-29.9-83.5-8-70 11.1 53.4 24.1 43.8 19.8 93 41.6l127.1 56.7c4.1-17.4 6.2-35.1 6.2-53.1 0-57-19.8-105-59.3-143.9-39.3-39.9-87.2-59.8-143.6-59.8z"/></svg>
+      
+      
+        <svg class="h-6 w-6 inline-block align-middle text-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true" focusable="false"><path d="M255.6 8C397.4 8 504 118.1 504 256 504 403.1 385.5 504 255.6 504 121.6 504 8 394.5 8 256 8 123.1 112.7 8 255.6 8zm.8 44.7c-118.2 0-203.7 97.9-203.7 203.3 0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8 .1-113.8-90.2-203.3-202.8-203.3zm94 144.3l0 42.5-180.3 0 0-42.5 180.3 0zm0 79.8l0 42.5-180.3 0 0-42.5 180.3 0z"/></svg>
+      
+    </a>
+  </p>
+
+
+
+
+<p class="powered-by text-center">
+  
+  
+  
+  © 2026 Sun Yat-sen University. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+</p>
+
+
+
+
+  
+  
+  
+    
+    
+      
+      
+        
+        
+      
+    
+
+    <p class="powered-by text-center text-sm opacity-80 py-1">
+      
+      
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      Made with <a class="underline hover:opacity-100" href="https://hugoblox.com?utm_source=site_footer&utm_medium=referral&utm_campaign=poweredby_oss&utm_content=brand_resume" target="_blank" rel="noopener" data-hbx="poweredby_brand">Hugo Blox</a>.
+      <a class="inline-flex items-center rounded px-2 py-0.5 border border-current ms-2 text-xs hover:opacity-100"
+         href="https://hugoblox.com/templates/resume/start?utm_source=site_footer&amp;utm_medium=referral&amp;utm_campaign=poweredby_oss&amp;utm_content=cta_resume" target="_blank" rel="noopener" data-hbx="poweredby_cta">Duplicate this template →</a>
+    </p>  
+
+</footer>
+
+    </div>
+
+    
+    
+
+
+<div id="hb-notification-container" class="fixed top-20 right-4 z-[9999] pointer-events-none" aria-live="polite" aria-atomic="true"></div>
+
+
+    
+    
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+    
+    
+  </body>
+</html>
