@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | </title>
+    <link>http://localhost:1313/projects/</link>
+      <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu_fb558a5ed99f547e.png</url>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+    </image>
+    
+    <item>
+      <title>Unmanned Express Delivery System</title>
+      <link>http://localhost:1313/projects/unmanned-express-delivery-system/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/unmanned-express-delivery-system/</guid>
+      <description>&lt;h2 id=&#34;1-hardware-selection-and-configuration&#34;&gt;1. Hardware Selection and Configuration&lt;/h2&gt;
+&lt;p&gt;The team has built a complete hardware system for the express delivery robot, consisting of a &lt;strong&gt;mobile chassis, a robotic arm, and computing &amp;amp; sensing devices&lt;/strong&gt;. The parameters and functions of each component are clearly defined to meet the core requirements of grasping, transporting, and placing packages:&lt;/p&gt;
+&lt;h3 id=&#34;11-mobile-chassis&#34;&gt;1.1 Mobile Chassis&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;1773319510271&#34; 
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_b2b284ebf4648436.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_75379af861562d9c.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_6140fbd389fb7f22.webp 687w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_b2b284ebf4648436.webp&#34;
+               width=&#34;687&#34;
+               height=&#34;432&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+We selected the AgileX HUNTER SE Ackermann chassis as the mobile core of the robot. Key parameters and features are as follows:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Property&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Specification&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Dimensions&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;820 × 640 × 310 mm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Wheelbase&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;550 mm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Weight&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;42 kg&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Max Load Capacity&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;50 kg (Meets package transport weight requirements)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Power&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;24V Lithium Battery (30Ah/60Ah) + 2 × 350W Brushless DC Drive Motors&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Steering&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;150W Brushless DC Motor + 1:4 Reduction Gearbox&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Steering Type&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Front-wheel Ackermann steering&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Steering Accuracy&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;0.5°&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Max Inner Steering Angle&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;22°&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Max Speed (No Load)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;4.8 m/s&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Min Turning Radius&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1.9 m&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Max Climbing Angle&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;20°&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Min Ground Clearance&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;120 mm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Operating Temperature&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;-10 ~ 45°C (Adaptable to various competition environments)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Control &amp;amp; Security&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Anti-collision beam, supports remote control (2.4G, max 200m) and command control&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Communication Interface&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;CAN&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;12-robotic-arm&#34;&gt;1.2 Robotic Arm&lt;/h3&gt;
+&lt;div style=&#34;display: flex; gap: 20px;&#34;&gt;
+  &lt;img src=&#34;image/index/1773319544175.png&#34; alt=&#34;Robotic Arm Image 1&#34; style=&#34;max-width: 48%; height: auto;&#34;&gt;
+  &lt;img src=&#34;image/index/1773320175590.png&#34; alt=&#34;Robotic Arm Image 2&#34; style=&#34;max-width: 48%; height: auto;&#34;&gt;
+&lt;/div&gt;
+The PIPER robotic arm was ultimately selected for grasping and placing packages. Core parameters:
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Property&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Specification&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Degrees of Freedom&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;6 DOF&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Effective Payload&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;1.5 kg&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Body Weight&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;4.2 kg&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Repeat Positioning Accuracy&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;±0.1 mm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Working Radius&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;626.75 mm (High grasping accuracy)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Power Consumption&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Max ≤ 120W, Comprehensive ≤ 40W&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Communication Method&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;CAN (Compatible with chassis communication)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Operating Temperature&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;-20 ~ 50°C&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Operating Humidity&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;25% - 85% (Non-condensing)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Base Mounting Dimensions&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;70 mm × 70 mm × M5 × 4 (Easy integration)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Hardware Limitation&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Gripper max opening: 70mm vs. Target diameter: 65mm (Demands high algorithm accuracy)&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;13-computing-sensing--auxiliary-devices&#34;&gt;1.3 Computing, Sensing &amp;amp; Auxiliary Devices&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;1773320124178&#34; 
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_2eb1437142eaf591.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_b71dc50ecfbcd5a2.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_5bc9aa706cbf4de.webp 631w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_2eb1437142eaf591.webp&#34;
+               width=&#34;631&#34;
+               height=&#34;720&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Component&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Computing Core&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;11th Gen Intel Core i7 NUC, ensuring algorithm execution and data processing efficiency.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Visual Perception&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Hikvision industrial camera, adaptable to various lighting conditions, providing clear images for object detection.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Mapping &amp;amp; Localization&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;MID360 LiDAR paired with an Inertial Measurement Unit (IMU) for environmental mapping and robot localization.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Auxiliary Structures&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;3D-printed Coke placement rack, tailored for specific grasping/placing target storage needs.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;2-algorithm-design-and-implementation&#34;&gt;2. Algorithm Design and Implementation&lt;/h2&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;1773319296585&#34; 
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_f9be63a7010362b6.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_5a36d1f7ba53a67c.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_13a61ed00efbfa08.webp 583w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_f9be63a7010362b6.webp&#34;
+               width=&#34;583&#34;
+               height=&#34;145&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;1773319309054&#34; 
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_4c01947cec086919.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_e75f1c1b7a59c8b8.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_34db02c005b057ec.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_4c01947cec086919.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;460&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+The overall algorithm framework of the robot is built on &lt;strong&gt;ROS1&lt;/strong&gt;, integrating mapping and localization, object detection, and precise grasping core algorithms. Through multi-algorithm synergy and secondary optimization, it achieves highly accurate and robust express delivery tasks.&lt;/p&gt;
+&lt;h3 id=&#34;21-technical-implementation-navigation-and-localization&#34;&gt;2.1 Technical Implementation: Navigation and Localization&lt;/h3&gt;
+&lt;p&gt;The overall solution for autonomous navigation and localization is centered on &lt;strong&gt;ROS1&lt;/strong&gt;, utilizing the &lt;strong&gt;FAST-LIO&lt;/strong&gt; algorithm framework for mapping and localization, and the powerful &lt;strong&gt;Nav2&lt;/strong&gt; navigation stack for path planning and motion control.&lt;/p&gt;
+&lt;h4 id=&#34;211-lidar-inertial-slam-mapping-based-on-fast-lio2&#34;&gt;2.1.1 LiDAR-Inertial SLAM Mapping Based on FAST-LIO2&lt;/h4&gt;
+&lt;p&gt;To achieve high-precision and high-robustness environmental mapping, we adopted the &lt;strong&gt;FAST-LIO2&lt;/strong&gt; framework, equipped with the mid360 LiDAR and IMU as core sensors.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Technical Principles&lt;/em&gt;: FAST-LIO2 is a tightly coupled LiDAR-inertial odometry framework. Its core technological advantage lies in abandoning traditional feature extraction steps in favor of a scan-to-map registration method, directly registering raw point clouds into the global map. This fully utilizes fine geometric features in the environment, significantly improving the accuracy and consistency of pose estimation.
+Additionally, it introduces the &lt;strong&gt;incremental k-d tree data structure (ikd-Tree)&lt;/strong&gt; to maintain the map. Compared to traditional static k-d trees, ikd-Tree supports efficient incremental point cloud updates and dynamic rebalancing, greatly reducing computational resource consumption, allowing the system to achieve real-time mapping and odometry resolution at frequencies up to 100Hz with limited computing power.&lt;/p&gt;
+&lt;h4 id=&#34;212-tf-tree-construction-and-relocalization-based-on-multi-sensor-fusion&#34;&gt;2.1.2 tf Tree Construction and Relocalization Based on Multi-Sensor Fusion&lt;/h4&gt;
+&lt;p&gt;Our vehicle localization employs multi-sensor fusion of LiDAR, IMU, and chassis odometry, enhancing the robustness and accuracy of relocalization. To effectively manage and use localization information in the ROS1 framework, a standard coordinate frame transformation (tf) convention is adopted:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;map&lt;/strong&gt; (Map Frame): A fixed world coordinate system acting as the global reference benchmark for all localization and navigation tasks.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;odom&lt;/strong&gt; (Odometry Frame): A reference frame used to represent continuous and smooth robot motion.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;base_link&lt;/strong&gt; (Robot Base Frame): A coordinate system fixed to the robot body.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Fast_lio_loc implements an innovative &lt;strong&gt;dual-layer localization architecture&lt;/strong&gt;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;High-Frequency Odometry Layer&lt;/strong&gt;: Through tightly coupled LiDAR-inertial fusion of FAST-LIO, it generates local odometry information (odom -&amp;gt; base_link) at frequencies over 100Hz.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Low-Frequency Global Localization Layer&lt;/strong&gt;: Parallels a particle filter for global localization (map -&amp;gt; odom) at a frequency of ~0.2-0.5Hz, periodically correcting accumulated errors generated by the high-frequency odometry.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;213-navigation-based-on-ros1-nav2&#34;&gt;2.1.3 Navigation Based on ROS1 Nav2&lt;/h4&gt;
+&lt;p&gt;We utilize the &lt;strong&gt;Nav2&lt;/strong&gt; framework, whose core is the &lt;code&gt;nav2_bt_navigator&lt;/code&gt; node, adopting a &lt;strong&gt;Behavior Tree (BT)&lt;/strong&gt; architecture to load and execute tasks.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Global Path Planner (Dijkstra)&lt;/strong&gt;: Operating in Nav2&amp;rsquo;s Planner Server, it discretizes the global costmap into a grid network and performs graph searches to ultimately find the feasible path with the minimum cost.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Local Path Planner (TEB)&lt;/strong&gt;: Running in the Controller Server, the TEB (Timed Elastic Band) algorithm frames trajectory optimization as a graph optimization problem via the g2o framework. The cost function produces a time-optimal trajectory considering path length, smoothness, distance to obstacles, and kinematic constraints.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;214-waypoint-navigation-interacting-with-the-robotic-arm&#34;&gt;2.1.4 Waypoint Navigation (Interacting with the Robotic Arm)&lt;/h4&gt;
+&lt;p&gt;To achieve the closed-loop task of navigation → operation → navigation, an event-driven task coordination module was designed:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Task Serialization&lt;/strong&gt;: The waypoint sequence table is configured via YAML.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Event-Driven Flow&lt;/strong&gt;: Start target point -&amp;gt; wait for execution -&amp;gt; trigger robotic arm grasp/place message (publish &lt;code&gt;task&lt;/code&gt; related topics) -&amp;gt; wait for completion (receive &lt;code&gt;True&lt;/code&gt; on the &lt;code&gt;/finished&lt;/code&gt; topic) -&amp;gt; fetch next waypoint.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;22-technical-implementation-robotic-arm-grasping-and-placing-control&#34;&gt;2.2 Technical Implementation: Robotic Arm Grasping and Placing Control&lt;/h3&gt;
+&lt;h4 id=&#34;221-coordinate-system-establishment-based-on-tf2&#34;&gt;2.2.1 Coordinate System Establishment (Based on tf2)&lt;/h4&gt;
+&lt;p&gt;Using &lt;code&gt;tf2&lt;/code&gt; to establish coordinate frames: chassis frame (baselink), robotic arm origin frame, end-effector frame, camera frame, and gripper frame.&lt;/p&gt;
+&lt;h4 id=&#34;222-object-detection-and-localization&#34;&gt;2.2.2 Object Detection and Localization&lt;/h4&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;1773319573403&#34; 
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_a13a154c57f24b31.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_1d759e2abfda6421.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_3ffdf6b2ff5a9084.webp 571w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_a13a154c57f24b31.webp&#34;
+               width=&#34;571&#34;
+               height=&#34;330&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;1773319579886&#34; 
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_26457c2ec395beb8.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_9b88bf49458509df.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_faa9cf5e0fa2f3e5.webp 570w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_26457c2ec395beb8.webp&#34;
+               width=&#34;570&#34;
+               height=&#34;330&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Object Recognition Based on YOLOv11&lt;/strong&gt;: Core technology based on YOLOv11s. Fine-tuned via transfer learning for specific targets in the competition arena, improving single-image prediction bounding box speed. Integrated secondary confirmation steps (color ratio analysis, etc.) to ensure correct judgments (e.g., parking, no_parking).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Placement Localization based on AprilTag Variant Recognition&lt;/strong&gt;: Efficiently calculates the 3D spatial position and orientation of the tags.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Point Cloud Segmentation and EKF Fusion&lt;/strong&gt;: Obtains point cloud data around targets using binocular depth camera triangulation. Fuses 2D position data identified by YOLOv11 with 3D point cloud data via Extended Kalman Filter (EKF) estimation and optimization to output precise world coordinates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;223-robotic-arm-trajectory-planning-and-control-based-on-moveit&#34;&gt;2.2.3 Robotic Arm Trajectory Planning and Control (Based on MoveIt!)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Motion Trajectory Planning&lt;/strong&gt;: Combined with the URDF model, MoveIt! translates high-dimensional tasks into bottom-layer collision-free trajectories (via RRT sampling algorithms).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collision Avoidance and Control&lt;/strong&gt;: Sends adjusted control command parameters based on velocity and acceleration limits to the robotic arm&amp;rsquo;s low-level controller.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;3-reference-projects-and-open-source&#34;&gt;3. Reference Projects and Open Source&lt;/h2&gt;
+&lt;p&gt;During development, we referenced:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;FAST_Lio2: 
+&lt;/li&gt;
+&lt;li&gt;Fast_Lio_Localization: 
+&lt;/li&gt;
+&lt;li&gt;YOLO v11: 
+&lt;/li&gt;
+&lt;li&gt;Piper SDK: 
+&lt;/li&gt;
+&lt;li&gt;Nav2Catch: 
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;4-innovative-achievements-and-project-highlights&#34;&gt;4. Innovative Achievements and Project Highlights&lt;/h2&gt;
+&lt;h3 id=&#34;41-innovative-achievements&#34;&gt;4.1 Innovative Achievements&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Integrated cutting-edge SLAM with dual-layer localization architecture&lt;/strong&gt; (FAST-LIO2 and dual-layer particle architecture) to achieve highly robust navigation and localization.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrated advanced AI vision and multi-sensor fusion technology&lt;/strong&gt; (YOLOv11, AprilTag, and binocular EKF optimization) to achieve precise and intelligent recognition and grasping.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Implemented an &amp;ldquo;Algorithm-First&amp;rdquo; and task abstraction development strategy&lt;/strong&gt; based on the ROS ecosystem, efficiently adapting to underlying hardware such as the AgileX Scout Mini / HUNTER SE chassis and PIPER robotic arm.&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Zephyr Catamaran USV Design</title>
+      <link>http://localhost:1313/projects/zephyr/</link>
+      <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/zephyr/</guid>
+      <description>&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h2&gt;
+&lt;div style=&#34;display: flex; justify-content: space-around;&#34;&gt;
+  &lt;img src=&#34;image/index/1773317171586.png&#34; alt=&#34;Image 1&#34; style=&#34;width: 45%;&#34;&gt;
+  &lt;img src=&#34;image/index/ship.jpg&#34; alt=&#34;Image 2&#34; style=&#34;width: 45%;&#34;&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;background&#34;&gt;Background&lt;/h3&gt;
+&lt;p&gt;With the rapid development of unmanned technology and intelligent control systems, unmanned surface vehicles (USVs) have become essential technological equipment in fields such as ocean exploration, environmental monitoring, waterway patrols, and emergency rescue. While traditional monohull designs are simple, they face limitations in maneuverability, speed, and payload expansion. In contrast, catamarans, with their superior stability and reduced hydrodynamic resistance, have emerged as a key direction for USV development.&lt;/p&gt;
+&lt;p&gt;In surface navigation tasks, USVs must achieve high maneuverability in complex waters while maintaining strong environmental adaptability and task execution capabilities. By integrating differential control, streamlined hull optimization, ducted propulsion technology, and intelligent task modules, the overall performance of USVs in complex application scenarios can be significantly enhanced.&lt;/p&gt;
+&lt;h3 id=&#34;significance&#34;&gt;Significance&lt;/h3&gt;
+&lt;p&gt;This project proposes a catamaran-based design that combines high maneuverability, stability, endurance, and multi-task expansion capabilities. Through differential control, fluid optimization, and multi-propulsion system coordination, the design improves navigation efficiency and environmental adaptability. Additionally, advanced remote control systems and LiDAR-based SLAM autonomous planning technologies enable precise remote control and environmental perception.&lt;/p&gt;
+&lt;h2 id=&#34;innovations&#34;&gt;Innovations&lt;/h2&gt;
+&lt;h3 id=&#34;1-catamaran-structure-and-multi-propulsion-coordination&#34;&gt;1. Catamaran Structure and Multi-Propulsion Coordination&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Design&lt;/strong&gt;: The catamaran design integrates dual underwater thrusters with differential control and dual surface ducted propulsion systems, achieving a balance of high maneuverability, stability, and speed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Advantages&lt;/strong&gt;: Enhances control performance and propulsion efficiency in complex waters. The ducted propulsion system also provides auxiliary cooling for onboard electronics.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-modular-tail-release-mechanism&#34;&gt;2. Modular Tail Release Mechanism&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Features&lt;/strong&gt;: A modular, easily replaceable tail release mechanism supports quick swapping of grippers for tasks such as buoy deployment and probe release, enhancing task adaptability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-multi-system-intelligent-control&#34;&gt;3. Multi-System Intelligent Control&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Integration&lt;/strong&gt;: Combines DJI O4pro digital video transmission with ELRS long-range remote control systems for high-resolution video feedback and low-latency control.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SLAM Technology&lt;/strong&gt;: Utilizes the Mid360 LiDAR and fastlio-SLAM mapping algorithm within the Nav2 framework for autonomous localization, environmental perception, and path planning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;design-approach&#34;&gt;Design Approach&lt;/h2&gt;
+&lt;h3 id=&#34;i-structural-design&#34;&gt;I. Structural Design&lt;/h3&gt;
+&lt;h4 id=&#34;1-catamaran-base-structure-and-propulsion-control&#34;&gt;(1) Catamaran Base Structure and Propulsion Control&lt;/h4&gt;
+&lt;p&gt;The catamaran design leverages dual underwater thrusters with differential control to achieve agile steering. By adjusting the speed difference between the two thrusters, the USV can precisely change its direction, whether for small-angle adjustments or large turns, greatly enhancing maneuverability.&lt;/p&gt;
+&lt;h4 id=&#34;2-streamlined-design-for-lift-and-drag-optimization&#34;&gt;(2) Streamlined Design for Lift and Drag Optimization&lt;/h4&gt;
+&lt;p&gt;The streamlined design minimizes air and water resistance during navigation. Special curved surfaces and angle adjustments optimize the structure in contact with water, generating additional lift. This lift partially raises the hull, reducing the wetted area, which further decreases drag, increases speed, and improves energy efficiency.&lt;/p&gt;
+&lt;h4 id=&#34;3-dual-surface-ducted-propulsion-system&#34;&gt;(3) Dual Surface Ducted Propulsion System&lt;/h4&gt;
+&lt;p&gt;The dual surface ducted propulsion system serves multiple functions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provides strong thrust to assist underwater thrusters, enhancing overall propulsion.&lt;/li&gt;
+&lt;li&gt;Stabilizes the hull by coordinating with the differential control of underwater thrusters, reducing vibrations and improving stability.&lt;/li&gt;
+&lt;li&gt;Generates airflow for cooling onboard electronics, ensuring optimal operating temperatures and extending equipment lifespan.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;4-tail-release-mechanism&#34;&gt;(4) Tail Release Mechanism&lt;/h4&gt;
+&lt;p&gt;The tail release mechanism features a modular design with high-strength 3D-printed components. It securely grips cylindrical or irregular objects, ensuring stability during motion. The standardized interface allows users to quickly swap grippers for various tasks, such as deploying probes or attaching mission modules. This modularity enhances versatility and simplifies maintenance.&lt;/p&gt;
+&lt;h3 id=&#34;ii-functional-design&#34;&gt;II. Functional Design&lt;/h3&gt;
+&lt;h4 id=&#34;1-dji-digital-video-transmission-system-and-elrs-remote-control-system&#34;&gt;(1) DJI Digital Video Transmission System and ELRS Remote Control System&lt;/h4&gt;
+&lt;p&gt;The DJI O4pro digital video transmission system offers outstanding imaging capabilities. Key specifications include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sensor&lt;/strong&gt;: 1/1.3-inch image sensor with a 155° FOV, f/2.8 aperture, and 12mm equivalent focal length.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Video&lt;/strong&gt;: Supports 4K recording at up to 120fps, with MP4 format and a maximum bitrate of 130Mbps.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Transmission&lt;/strong&gt;: Advanced digital transmission with H.265 encoding, enabling 1080p/100fps video streaming over distances up to 15km in open environments. Strong anti-interference capabilities ensure stable operation in complex electromagnetic environments.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The ELRS (ExpressLRS) remote control system operates on 915MHz or 2.4GHz frequencies, achieving long-range communication via LoRa modules. Key features include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Transmission Power&lt;/strong&gt;: 1W for the transmitter, 100mW for telemetry.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Range&lt;/strong&gt;: Over 25km in open environments.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Precision&lt;/strong&gt;: Converts RF signals into CRSF digital control signals for precise long-range operation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;2-autonomous-detection-and-planning-system&#34;&gt;(2) Autonomous Detection and Planning System&lt;/h4&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;1773317467011&#34; 
+               srcset=&#34;http://localhost:1313/projects/zephyr/image/index/1773317467011_hu_9e0c60035f984547.webp 320w, http://localhost:1313/projects/zephyr/image/index/1773317467011_hu_6949fa445fb7b061.webp 480w, http://localhost:1313/projects/zephyr/image/index/1773317467011_hu_af87cae8ff3d9a7d.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1313/projects/zephyr/image/index/1773317467011_hu_9e0c60035f984547.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;362&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+Equipped with the Mid360 LiDAR and corresponding computational units, the USV builds a robust SLAM (Simultaneous Localization and Mapping) system. Using the fastlio mapping algorithm, the LiDAR scans and models unknown environments, generating high-precision 3D maps. Within the Nav2 framework, the USV combines GICP relocalization for accurate positioning and the TEB local planner for real-time trajectory optimization. This system enables the USV to autonomously complete path planning and waypoint tasks in radio-denied environments.&lt;/p&gt;
+&lt;h2 id=&#34;bill-of-materials-bom&#34;&gt;Bill of Materials (BOM)&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Level&lt;/th&gt;
+          &lt;th&gt;Component Name&lt;/th&gt;
+          &lt;th&gt;Material&lt;/th&gt;
+          &lt;th&gt;Quantity&lt;/th&gt;
+          &lt;th&gt;Cost&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;Catamaran&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1.1&lt;/td&gt;
+          &lt;td&gt;Buoyancy Unit&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1.1.1&lt;/td&gt;
+          &lt;td&gt;Foam Buoyancy Rod&lt;/td&gt;
+          &lt;td&gt;Pearl Foam&lt;/td&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;40&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1.1.2&lt;/td&gt;
+          &lt;td&gt;Fairing&lt;/td&gt;
+          &lt;td&gt;PETG&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;20&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1.2&lt;/td&gt;
+          &lt;td&gt;Thrusters&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;600&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1.3&lt;/td&gt;
+          &lt;td&gt;NUC Mount&lt;/td&gt;
+          &lt;td&gt;PETG&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;5&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1.4&lt;/td&gt;
+          &lt;td&gt;Mid360 LiDAR&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;4000&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1.5&lt;/td&gt;
+          &lt;td&gt;ELRS Receiver&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;50&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>YOLO-Based Water Cannon Auto-Aiming System</title>
+      <link>http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;The YOLO-Based Water Cannon Auto-Aiming System is an intelligent robotic platform for autonomous target detection, tracking, and precision striking. Developed under Sun Yat-sen University Innovation Training Program (Project No. 20251983), it integrates YOLO object detection, ROS2 distributed architecture, and adaptive control for dynamic target engagement in aquatic environments.&lt;/p&gt;
+&lt;h2 id=&#34;hardware-platform&#34;&gt;Hardware Platform&lt;/h2&gt;
+&lt;h3 id=&#34;dual-hull-unmanned-boat-design&#34;&gt;Dual-Hull Unmanned Boat Design&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Structure&lt;/strong&gt;: High-strength catamaran with reinforced design for complex water conditions and equipment loads, utilizing dual underwater thrusters for differential control and dual surface ducted propulsion systems.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Propulsion&lt;/strong&gt;: Dual ducted surface propellers for auxiliary power and enhanced stability against waves and recoil forces.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Extensibility&lt;/strong&gt;: Modular layout with integrated battery packs, NUC computing cores, and expansion interfaces, providing ample space for high-power water pumps and shooting systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&#34;display: flex; justify-content: space-around;&#34;&gt;
+  &lt;img src=&#34;fig/双体船设计图.png&#34; alt=&#34;Catamaran Design&#34; style=&#34;width: 45%;&#34;&gt;
+  &lt;img src=&#34;fig/双体船实物图.jpg&#34; alt=&#34;Catamaran Prototype&#34; style=&#34;width: 45%;&#34;&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;hardware-configuration&#34;&gt;Hardware Configuration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mainboard&lt;/strong&gt;: NVIDIA Jetson Xavier NX Super for GPU inference.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Servo Gimbal&lt;/strong&gt;: &lt;a href=&#34;https://fashionrobo.com/simple-pantilt/26797/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Fashionrobo intelligent&lt;/a&gt; servos with serial communication and PID control.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Camera&lt;/strong&gt;: Nuwa HP60C depth cameras for 3D perception and distance measurement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&#34;display: flex; justify-content: space-around;&#34;&gt;
+  &lt;img src=&#34;fig/hardware/舵机.png&#34; alt=&#34;Servo Gimbal&#34; style=&#34;width: 30%;&#34;&gt;
+  &lt;img src=&#34;fig/hardware/jetson.png&#34; alt=&#34;Jetson Xavier NX&#34; style=&#34;width: 30%;&#34;&gt;
+  &lt;img src=&#34;fig/hardware/usb相机.png&#34; alt=&#34;USB Camera&#34; style=&#34;width: 30%;&#34;&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;innovation-points&#34;&gt;Innovation Points&lt;/h2&gt;
+&lt;h3 id=&#34;dual-hull-boat-structure-and-multi-propulsion-coordination&#34;&gt;Dual-Hull Boat Structure and Multi-Propulsion Coordination&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Design&lt;/strong&gt;: Catamaran with dual underwater thrusters for differential control and dual surface ducted propulsion, achieving high maneuverability and stability.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Advantages&lt;/strong&gt;: Enhances lateral stability against waves and recoil, with space for high-power water pumps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;modular-ros2-architecture&#34;&gt;Modular ROS2 Architecture&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Framework&lt;/strong&gt;: Node-based architecture separating perception, decision-making, and execution for asynchronous communication and concurrent processing.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Benefits&lt;/strong&gt;: Improves performance, scalability, and maintainability.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;adaptive-control-algorithms&#34;&gt;Adaptive Control Algorithms&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;PID Integration&lt;/strong&gt;: PID control with auto-tuning for servo motors, including anti-windup, low-pass filtering, and dead-zone compensation to reduce power consumption and eliminate oscillations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;system-architecture&#34;&gt;System Architecture&lt;/h2&gt;
+&lt;p&gt;Built on ROS2, divided into three layers:&lt;/p&gt;
+&lt;h3 id=&#34;perception-layer&#34;&gt;Perception Layer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Camera Monitor Node&lt;/strong&gt;: Handles USB/depth camera inputs, publishes image streams to &lt;code&gt;/camera/image&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Object Detection Node&lt;/strong&gt;: Uses YOLOv8 for real-time detection, publishes bounding boxes and confidence scores to &lt;code&gt;/detection/result&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;decision-layer&#34;&gt;Decision Layer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tracking Calculation Node&lt;/strong&gt;: Transforms pixel coordinates to angular errors using camera FOV parameters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;execution-layer&#34;&gt;Execution Layer&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Servo Control Node&lt;/strong&gt;: Implements adaptive PID controllers with auto-tuners for precise actuation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Servo Monitor Node&lt;/strong&gt;: Monitors voltage, temperature, and position for safety.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;integration&#34;&gt;Integration&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Launch Package&lt;/strong&gt;: One-click startup with configurable parameters for depth camera integration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;ROS2 System Architecture&#34; 
+               srcset=&#34;http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_6c5e51e8f59193de.webp 320w, http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_deb7fa89c7bce569.webp 480w, http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_8d305fa2dc622c1e.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_6c5e51e8f59193de.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;711&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;key-achievements&#34;&gt;Key Achievements&lt;/h2&gt;
+&lt;h3 id=&#34;python-monolithic-system-v118--aim-v10&#34;&gt;Python Monolithic System (v1.1.8 / AIM V1.0)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Software&lt;/strong&gt;: &amp;ldquo;AIM Intelligent Target Tracking System&amp;rdquo; with multi-threaded architecture, SimplePID controller, SimpleTargetTracker, and CoordinateConverter.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Features&lt;/strong&gt;: Intelligent degradation protection, auto-tuning, and monitoring.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;flex justify-center	&#34;&gt;
+    &lt;div class=&#34;w-full&#34; &gt;
+          &lt;img alt=&#34;AIM System Interface&#34; 
+               srcset=&#34;http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_f1c4e051571acf7f.webp 320w, http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_2314ca4c7a3e7eb4.webp 480w, http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_ca7c1e64cf8de315.webp 760w&#34;
+               sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
+               src=&#34;http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_f1c4e051571acf7f.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;597&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;project-team&#34;&gt;Project Team&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Project Leader&lt;/strong&gt;: Cu Disheng (Information Engineering, 2023)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Team Members&lt;/strong&gt;: Cen Dai, Liu Chaoyin, Mao Lishan (Information Engineering, 2023)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Supervisor&lt;/strong&gt;: Hou Yanqing (School of Systems Science and Engineering)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
