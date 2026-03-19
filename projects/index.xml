@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects | </title>
-    <link>https://tsuidison.github.io/projects/</link>
-      <atom:link href="https://tsuidison.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
+    <link>http://localhost:1313/projects/</link>
+      <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://tsuidison.github.io/media/icon_hu_fb558a5ed99f547e.png</url>
+      <url>http://localhost:1313/media/icon_hu_fb558a5ed99f547e.png</url>
       <title>Projects</title>
-      <link>https://tsuidison.github.io/projects/</link>
+      <link>http://localhost:1313/projects/</link>
     </image>
     
     <item>
       <title>Unmanned Express Delivery System</title>
-      <link>https://tsuidison.github.io/projects/unmanned-express-delivery-system/</link>
+      <link>http://localhost:1313/projects/unmanned-express-delivery-system/</link>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>https://tsuidison.github.io/projects/unmanned-express-delivery-system/</guid>
+      <guid>http://localhost:1313/projects/unmanned-express-delivery-system/</guid>
       <description>&lt;h2 id=&#34;1-hardware-selection-and-configuration&#34;&gt;1. Hardware Selection and Configuration&lt;/h2&gt;
 &lt;p&gt;The team has built a complete hardware system for the express delivery robot, consisting of a &lt;strong&gt;mobile chassis, a robotic arm, and computing &amp;amp; sensing devices&lt;/strong&gt;. The parameters and functions of each component are clearly defined to meet the core requirements of grasping, transporting, and placing packages:&lt;/p&gt;
 &lt;h3 id=&#34;11-mobile-chassis&#34;&gt;1.1 Mobile Chassis&lt;/h3&gt;
@@ -40,9 +40,9 @@
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-full&#34; &gt;
           &lt;img alt=&#34;1773319510271&#34; 
-               srcset=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_b2b284ebf4648436.webp 320w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_75379af861562d9c.webp 480w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_6140fbd389fb7f22.webp 687w&#34;
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_b2b284ebf4648436.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_75379af861562d9c.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_6140fbd389fb7f22.webp 687w&#34;
                sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_b2b284ebf4648436.webp&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319510271_hu_b2b284ebf4648436.webp&#34;
                width=&#34;687&#34;
                height=&#34;432&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -204,9 +204,9 @@ The PIPER robotic arm was ultimately selected for grasping and placing packages.
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-full&#34; &gt;
           &lt;img alt=&#34;1773320124178&#34; 
-               srcset=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_2eb1437142eaf591.webp 320w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_b71dc50ecfbcd5a2.webp 480w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_5bc9aa706cbf4de.webp 631w&#34;
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_2eb1437142eaf591.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_b71dc50ecfbcd5a2.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_5bc9aa706cbf4de.webp 631w&#34;
                sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_2eb1437142eaf591.webp&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773320124178_hu_2eb1437142eaf591.webp&#34;
                width=&#34;631&#34;
                height=&#34;720&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -259,9 +259,9 @@ The PIPER robotic arm was ultimately selected for grasping and placing packages.
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-full&#34; &gt;
           &lt;img alt=&#34;1773319296585&#34; 
-               srcset=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_f9be63a7010362b6.webp 320w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_5a36d1f7ba53a67c.webp 480w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_13a61ed00efbfa08.webp 583w&#34;
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_f9be63a7010362b6.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_5a36d1f7ba53a67c.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_13a61ed00efbfa08.webp 583w&#34;
                sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_f9be63a7010362b6.webp&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319296585_hu_f9be63a7010362b6.webp&#34;
                width=&#34;583&#34;
                height=&#34;145&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -287,9 +287,9 @@ The PIPER robotic arm was ultimately selected for grasping and placing packages.
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-full&#34; &gt;
           &lt;img alt=&#34;1773319309054&#34; 
-               srcset=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_4c01947cec086919.webp 320w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_e75f1c1b7a59c8b8.webp 480w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_34db02c005b057ec.webp 760w&#34;
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_4c01947cec086919.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_e75f1c1b7a59c8b8.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_34db02c005b057ec.webp 760w&#34;
                sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_4c01947cec086919.webp&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319309054_hu_4c01947cec086919.webp&#34;
                width=&#34;760&#34;
                height=&#34;460&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -350,9 +350,9 @@ Additionally, it introduces the &lt;strong&gt;incremental k-d tree data structur
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-full&#34; &gt;
           &lt;img alt=&#34;1773319573403&#34; 
-               srcset=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_a13a154c57f24b31.webp 320w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_1d759e2abfda6421.webp 480w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_3ffdf6b2ff5a9084.webp 571w&#34;
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_a13a154c57f24b31.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_1d759e2abfda6421.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_3ffdf6b2ff5a9084.webp 571w&#34;
                sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_a13a154c57f24b31.webp&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319573403_hu_a13a154c57f24b31.webp&#34;
                width=&#34;571&#34;
                height=&#34;330&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -378,9 +378,9 @@ Additionally, it introduces the &lt;strong&gt;incremental k-d tree data structur
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-full&#34; &gt;
           &lt;img alt=&#34;1773319579886&#34; 
-               srcset=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_26457c2ec395beb8.webp 320w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_9b88bf49458509df.webp 480w, https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_faa9cf5e0fa2f3e5.webp 570w&#34;
+               srcset=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_26457c2ec395beb8.webp 320w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_9b88bf49458509df.webp 480w, http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_faa9cf5e0fa2f3e5.webp 570w&#34;
                sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;https://tsuidison.github.io/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_26457c2ec395beb8.webp&#34;
+               src=&#34;http://localhost:1313/projects/unmanned-express-delivery-system/image/index/1773319579886_hu_26457c2ec395beb8.webp&#34;
                width=&#34;570&#34;
                height=&#34;330&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -422,9 +422,9 @@ Additionally, it introduces the &lt;strong&gt;incremental k-d tree data structur
     
     <item>
       <title>Zephyr Catamaran USV Design</title>
-      <link>https://tsuidison.github.io/projects/zephyr/</link>
+      <link>http://localhost:1313/projects/zephyr/</link>
       <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://tsuidison.github.io/projects/zephyr/</guid>
+      <guid>http://localhost:1313/projects/zephyr/</guid>
       <description>&lt;h2 id=&#34;project-overview&#34;&gt;Project Overview&lt;/h2&gt;
 &lt;div style=&#34;display: flex; justify-content: space-around;&#34;&gt;
   &lt;img src=&#34;image/index/1773317171586.png&#34; alt=&#34;Image 1&#34; style=&#34;width: 45%;&#34;&gt;
@@ -500,9 +500,9 @@ Additionally, it introduces the &lt;strong&gt;incremental k-d tree data structur
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-full&#34; &gt;
           &lt;img alt=&#34;1773317467011&#34; 
-               srcset=&#34;https://tsuidison.github.io/projects/zephyr/image/index/1773317467011_hu_9e0c60035f984547.webp 320w, https://tsuidison.github.io/projects/zephyr/image/index/1773317467011_hu_6949fa445fb7b061.webp 480w, https://tsuidison.github.io/projects/zephyr/image/index/1773317467011_hu_af87cae8ff3d9a7d.webp 760w&#34;
+               srcset=&#34;http://localhost:1313/projects/zephyr/image/index/1773317467011_hu_9e0c60035f984547.webp 320w, http://localhost:1313/projects/zephyr/image/index/1773317467011_hu_6949fa445fb7b061.webp 480w, http://localhost:1313/projects/zephyr/image/index/1773317467011_hu_af87cae8ff3d9a7d.webp 760w&#34;
                sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;https://tsuidison.github.io/projects/zephyr/image/index/1773317467011_hu_9e0c60035f984547.webp&#34;
+               src=&#34;http://localhost:1313/projects/zephyr/image/index/1773317467011_hu_9e0c60035f984547.webp&#34;
                width=&#34;760&#34;
                height=&#34;362&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -584,9 +584,9 @@ Equipped with the Mid360 LiDAR and corresponding computational units, the USV bu
     
     <item>
       <title>YOLO-Based Water Cannon Auto-Aiming System</title>
-      <link>https://tsuidison.github.io/projects/yolo-based-water-cannon-auto-aiming-system/</link>
+      <link>http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/</link>
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://tsuidison.github.io/projects/yolo-based-water-cannon-auto-aiming-system/</guid>
+      <guid>http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;The YOLO-Based Water Cannon Auto-Aiming System is an intelligent robotic platform for autonomous target detection, tracking, and precision striking. Developed under Sun Yat-sen University Innovation Training Program (Project No. 20251983), it integrates YOLO object detection, ROS2 distributed architecture, and adaptive control for dynamic target engagement in aquatic environments.&lt;/p&gt;
 &lt;h2 id=&#34;hardware-platform&#34;&gt;Hardware Platform&lt;/h2&gt;
@@ -666,9 +666,9 @@ Equipped with the Mid360 LiDAR and corresponding computational units, the USV bu
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-full&#34; &gt;
           &lt;img alt=&#34;ROS2 System Architecture&#34; 
-               srcset=&#34;https://tsuidison.github.io/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_6c5e51e8f59193de.webp 320w, https://tsuidison.github.io/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_deb7fa89c7bce569.webp 480w, https://tsuidison.github.io/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_8d305fa2dc622c1e.webp 760w&#34;
+               srcset=&#34;http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_6c5e51e8f59193de.webp 320w, http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_deb7fa89c7bce569.webp 480w, http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_8d305fa2dc622c1e.webp 760w&#34;
                sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;https://tsuidison.github.io/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_6c5e51e8f59193de.webp&#34;
+               src=&#34;http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/ros%E6%A1%86%E6%9E%B6%E5%9B%BE_hu_6c5e51e8f59193de.webp&#34;
                width=&#34;760&#34;
                height=&#34;711&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -700,9 +700,9 @@ Equipped with the Mid360 LiDAR and corresponding computational units, the USV bu
   &lt;div class=&#34;flex justify-center	&#34;&gt;
     &lt;div class=&#34;w-full&#34; &gt;
           &lt;img alt=&#34;AIM System Interface&#34; 
-               srcset=&#34;https://tsuidison.github.io/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_f1c4e051571acf7f.webp 320w, https://tsuidison.github.io/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_2314ca4c7a3e7eb4.webp 480w, https://tsuidison.github.io/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_ca7c1e64cf8de315.webp 760w&#34;
+               srcset=&#34;http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_f1c4e051571acf7f.webp 320w, http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_2314ca4c7a3e7eb4.webp 480w, http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_ca7c1e64cf8de315.webp 760w&#34;
                sizes=&#34;(max-width: 480px) 100vw, (max-width: 768px) 90vw, (max-width: 1024px) 80vw, 760px&#34;
-               src=&#34;https://tsuidison.github.io/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_f1c4e051571acf7f.webp&#34;
+               src=&#34;http://localhost:1313/projects/yolo-based-water-cannon-auto-aiming-system/fig/%E7%9E%84%E5%87%86%E7%B3%BB%E7%BB%9F%E6%8E%A7%E5%88%B6%E7%95%8C%E9%9D%A2_hu_f1c4e051571acf7f.webp&#34;
                width=&#34;760&#34;
                height=&#34;597&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
