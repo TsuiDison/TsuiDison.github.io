@@ -3404,9 +3404,6 @@
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
   }
-  .pl-8 {
-    padding-left: calc(var(--spacing) * 8);
-  }
   .pl-10 {
     padding-left: calc(var(--spacing) * 10);
   }
@@ -6043,11 +6040,6 @@
   .rtl\:pr-4 {
     &:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) {
       padding-right: calc(var(--spacing) * 4);
-    }
-  }
-  .rtl\:pr-8 {
-    &:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *) {
-      padding-right: calc(var(--spacing) * 8);
     }
   }
   .rtl\:pl-9 {
