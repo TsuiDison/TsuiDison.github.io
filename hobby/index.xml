@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hobbies | </title>
+    <link>http://localhost:53643/hobby/</link>
+      <atom:link href="http://localhost:53643/hobby/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hobbies</description>
+    <generator>HugoBlox Kit (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:53643/media/icon_hu_fb558a5ed99f547e.png</url>
+      <title>Hobbies</title>
+      <link>http://localhost:53643/hobby/</link>
+    </image>
+    
+    <item>
+      <title>Tennis Awards</title>
+      <link>http://localhost:53643/hobby/tennis/</link>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:53643/hobby/tennis/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;2026 中山大学“精英杯”网球赛&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;男子单打：亚军&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2025 中山大学“精英杯”网球赛&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;男子双打：亚军&lt;/li&gt;
+&lt;li&gt;混合双打：季军&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2025 中山大学“逸仙杯”网球赛&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;男子单打：八强&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2024 中山大学“精英杯”网球赛&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;男子双打：四强&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
